@@ -19,6 +19,7 @@
 
 | Skill | 说明 | 文件 |
 |---|---|---|
+| `$asset-binding` | 用于把 Studio 已生成、验证并导入 Unreal 的资产绑定到当前游戏功能工作树，同时保持输入、战斗时序、引用和验证边界。 | `.codex/skills/asset-binding/SKILL.md` |
 | `$asset-production` | 用于从 Studio 资产需求创建 Blender 模型、保存源文件、导出 FBX/预览并交付 Unreal 导入清单。 | `.codex/skills/asset-production/SKILL.md` |
 | `$asset-quality-gate` | 用于 Blender 游戏资产的生产质量门禁、多视角评审、自动优化循环、最佳版本保留和 UE 导入前验证。 | `.codex/skills/asset-quality-gate/SKILL.md` |
 | `$blender-asset-pipeline` | 用于 UE 魂类项目的 Blender 建模、MCP 场景自动化、重定向准备、网格与动画导出、LOD、碰撞命名和 Unreal 导入验证。 | `.codex/skills/blender-asset-pipeline/SKILL.md` |

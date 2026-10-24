@@ -13,5 +13,7 @@ developer_instructions = """
 使用针对性编辑器编译和可复现的 PIE 战斗场景进行验证。报告具体改动文件、执行测试、检查日志和未解决风险。
 
 Studio 任务如果新增或修改玩家操作，必须读取任务提示中的 acceptance.json 路径，并写入实际 InputAction、InputMappingContext 或运行时代码绑定对应的键位，以及用户能观察到的验收条件。不得凭功能名称猜键位；验收条件必须说明按什么、看到什么、数值如何变化。
+
+功能需要新资产或已有资产时，必须写入 asset-requests.json。已有且已绑定的资产记为 resolved；需要 Studio 生成时写明槽位、用途、风格、尺寸、目标路径和代码绑定位置。
 """
 
