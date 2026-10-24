@@ -1,10 +1,10 @@
 {
-  "kitVersion": "0.4.1",
+  "kitVersion": "0.4.2",
   "schemaVersion": 2,
   "channel": "stable",
   "repository": "2020bruce/SoulslikeForge",
-  "commit": "af9911b7d33620540e7b1d4cc964f41fc6587c52",
-  "installedAt": "2026-10-24T06:05:32.413Z",
+  "commit": "611f222e1f596000a8968150f8cf082249002fb0",
+  "installedAt": "2026-10-24T06:29:04.422Z",
   "installedFiles": {
     ".codex/agents/animation-ai-engineer.toml": "9cffcf809fe04cd500470594d1fd28568ba9348b89ba69f0148985fe58e87dab",
     ".codex/agents/blender-asset-artist.toml": "0f61b0ae764079b94ce2acdd2463c93fab323025361889bad7a6f047b98cfca8",
@@ -16,11 +16,11 @@
     ".codex/skills/soulslike-docs-sync/SKILL.md": "ee360346712fcbbc275a0bb4244247c5727db4eb6061db1dc2ce4a8933f3a85b",
     ".codex/skills/soulslike-combat/SKILL.md": "44e1318e2338806c8a3b1625582e8b01d09f2cadae3f2dda4ea7d8e8aa661873",
     ".codex/skills/blender-asset-pipeline/SKILL.md": "5c341c88c1f1b7ae76b5ace3b58eccd5e521b4e321c8a1f6595a70190221d8e6",
-    ".soulforge/docs-map.json": "f2f2de8c84e67470a8390efda31795d58518259fcdcd32cffc31c9afb375b924",
-    "Docs/Architecture.md": "99735f2d7a692f33e1bd9b8a9ca6666557e7daf6b63091caa394c75c0838f290",
-    "Docs/AssetPipeline.md": "f32f56d87303ac3e78064e30c792208dcab01d25713ba03475bd2f11ae9b6b23",
-    "Docs/CodexWorkflow.md": "564489edefdae0e8a7112efd3f16827ff228422bca3d43e516753fbd0fcd59ef",
-    "Docs/CombatDesign.md": "137c63be34289cb1069c7b89468917276a365c45f07715e1e83e21bd8e8d7c83",
-    "Docs/DesignDecisions.md": "d7abcd761dfd39ec1a4273fd51dca8af84ee856734b59b207fc121ded0b0bead"
+    ".soulforge/docs-map.json": "e9851f19618f72ed603b69fb9fdea46f5aea8a2d979c35f6d286c71672f6b401",
+    "Docs/Architecture.md": "b093b58e4ee8f51dc5b6007d7bb8a5e5ac0c347c0e803fc2fc2dd211ad8379ac",
+    "Docs/AssetPipeline.md": "31a966b7606ffa4ffb6f52ef9e0981b2a127f6d98892543f0df4ed0098d16c9e",
+    "Docs/CodexWorkflow.md": "843d54ae2d0613f5a4b3b5ce9a926f700dc857c4ec127ffb73299e4a19abd401",
+    "Docs/CombatDesign.md": "d49b53a8a81da11c93bce05be64a33f08bd4915c62f2ddf7cec013170cc88511",
+    "Docs/DesignDecisions.md": "deba0ee62b566437453ba40298b475e8a4c2f1a8c3534ddf75cbc41d122c144e"
   }
 }

@@ -12,3 +12,4 @@ developer_instructions = """
 
 不要手工编辑 Docs/Generated 或 Docs/DocDrift.md。完成后运行 soulforge docs check --all --strict，并对已复核的文档执行 acknowledge。报告变更来源、更新文档、验证命令和剩余漂移。
 """
+

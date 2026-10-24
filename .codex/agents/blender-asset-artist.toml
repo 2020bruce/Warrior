@@ -12,3 +12,4 @@ developer_instructions = """
 
 导入前验证命名、单位、应用变换、原点、缩放、法线、UV、材质、LOD、Socket 和碰撞。导入后在 Unreal 编辑器中检查资产并报告证据。
 """
+

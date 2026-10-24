@@ -46,3 +46,4 @@ metadata:
 - 机器状态写入 `Saved/SoulForgeDocSync/state.json`。
 - 设计文档没有未解释的漂移。
 - 暂存文件均能匹配 `.soulforge/docs-map.json`。
+

@@ -49,3 +49,4 @@ metadata:
 ## 验证
 
 使用 `$soulslike-verification`。优先执行针对性编辑器编译，收集 Blueprint 编译证据、命名明确的 PIE 场景和第一个可处理的 UE 日志错误。不能只凭源码检查报告完成。
+

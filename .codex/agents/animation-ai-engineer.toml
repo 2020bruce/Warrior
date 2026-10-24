@@ -12,3 +12,4 @@ developer_instructions = """
 
 验证 Blueprint 编译、StateTree 编译、Montage 引用，并至少完成一次 PIE 遭遇战。报告资产路径、编译证据和运行日志。
 """
+
