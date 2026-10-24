@@ -9,6 +9,13 @@
   "defaultConfiguration": "Development",
   "defaultTestSuite": "Smoke",
   "studioPort": 4317,
+  "studio": {
+    "agent": {
+      "enabled": true,
+      "command": "codex",
+      "args": []
+    }
+  },
   "worktree": {
     "root": "",
     "maxAgents": 3

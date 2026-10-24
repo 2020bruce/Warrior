@@ -31,6 +31,8 @@ Plugins/**/Intermediate/
 .githooks/
 *.soulforge.bak
 .soulforge/config.json
+.soulforge/worktrees.json
+.soulforge/worktree.json
 .soulforge/*.bak
 .warrior/design.backup.json
 
