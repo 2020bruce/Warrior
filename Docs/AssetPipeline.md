@@ -42,6 +42,15 @@
 - 源文件位于 `SourceArt/Blender/Characters/SM_Doraemon_Base.blend`，UE 资产位于
   `Content/Assets/Blender/characters`。
 
+`SM_Doraemon_Showcase` 是当前游戏主角使用的展示网格：
+
+- 单个合并网格，8 个材质槽，尺寸约 `1.108 × 0.806 × 1.290m`。
+- 脸部、肚皮和口袋使用贴合头部与身体曲面的面板，眼睛、瞳孔和高光分层。
+- 非流形边、零面积面和游离点均为 0，保留 UV 和完整材质分配。
+- 源文件位于 `SourceArt/Blender/Characters/SM_Doraemon_Showcase.blend`。
+- 当前由 `AWarriorHeroCharacter` 的 `DoraemonMeshComponent` 显示。
+- 这是绑定前静态网格；移动和碰撞沿用 ACharacter，但尚未接入骨骼动画。
+
 ## 命名
 
 - 静态网格：`SM_`

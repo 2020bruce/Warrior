@@ -25,6 +25,9 @@
 ## 输入与试玩
 
 - 角色移动、镜头和跳跃由 `AWarriorHeroCharacter` 绑定到 `DefaultInput.ini` 的轴与动作映射。
+- `AWarriorHeroCharacter` 通过 `DoraemonMeshComponent` 显示 `SM_Doraemon_Showcase`，并隐藏继承的骨骼英雄网格。
+- 当前主角外观是 129cm 高的静态网格；胶囊半径 52cm、半高 72cm，移动、镜头和跳跃仍使用 ACharacter。
+- 静态主角尚未绑定骨骼动画，原 `SK_CharM_Barbarous` 仅保留在 Blueprint 中用于后续动画试验。
 - 锁定和无目标切换由 `AWarriorHeroController` 使用运行时 Enhanced Input 映射。
 - `AWarriorBaseGameMode` 指定默认角色、PlayerController 和操作提示 HUD。
 - Standalone 试玩使用 `UnrealEditor.exe -game`，不要求先生成安装包。

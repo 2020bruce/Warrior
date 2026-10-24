@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-24T10:47:18.112Z",
+  "updatedAt": "2026-10-24T11:17:39.024Z",
   "designs": {
     "Content/Maps/Lvl_WarriorDevMap.umap": {
       "title": "开发主地图",
@@ -26,9 +26,50 @@
       ],
       "notes": "由 Blender 资产制作 Agent 生成的灰盒路线标记。",
       "updatedAt": "2026-10-24T10:05:34.094Z"
+    },
+    "Content/Assets/Blender/characters/SM_Doraemon_Showcase.uasset": {
+      "title": "哆啦A梦主角",
+      "systemId": "player",
+      "role": "hero-visual",
+      "status": "approved",
+      "tags": [
+        "player",
+        "hero",
+        "doraemon",
+        "blender",
+        "static-mesh"
+      ],
+      "notes": "当前 Warrior 主角外观。由 AWarriorHeroCharacter 的 DoraemonMeshComponent 显示，保留 ACharacter 胶囊、移动、镜头和 GameMode 流程；暂未绑定骨骼动画。",
+      "updatedAt": "2026-10-24T11:17:39.024Z"
     }
   },
   "imports": [
+    {
+      "id": "import-20261024110023-1b3e76d7",
+      "originalName": "SM_Doraemon_Showcase.fbx",
+      "sourcePath": "SourceArt/Imports/Incoming/20261024/import-20261024110023-1b3e76d7-SM_Doraemon_Showcase.fbx",
+      "destinationPath": "/Game/Assets/Blender/characters",
+      "assetName": "SM_Doraemon_Showcase",
+      "kind": "mesh",
+      "status": "completed",
+      "size": 2478844,
+      "createdAt": "2026-10-24T11:00:23.910Z",
+      "updatedAt": "2026-10-24T11:00:58.151Z",
+      "jobId": "asset-job-20261024110030-8d8bbcbc",
+      "logPath": "Saved/SoulForgeStudio/asset-imports/asset-job-20261024110030-8d8bbcbc/import.log",
+      "error": null,
+      "importedPaths": [
+        "/Game/Assets/Blender/characters/M_Doraemon_Blue.M_Doraemon_Blue",
+        "/Game/Assets/Blender/characters/M_Doraemon_Face.M_Doraemon_Face",
+        "/Game/Assets/Blender/characters/M_Doraemon_White.M_Doraemon_White",
+        "/Game/Assets/Blender/characters/M_Doraemon_Pocket.M_Doraemon_Pocket",
+        "/Game/Assets/Blender/characters/M_Doraemon_Black.M_Doraemon_Black",
+        "/Game/Assets/Blender/characters/M_Doraemon_Highlight.M_Doraemon_Highlight",
+        "/Game/Assets/Blender/characters/M_Doraemon_Red.M_Doraemon_Red",
+        "/Game/Assets/Blender/characters/M_Doraemon_Bell.M_Doraemon_Bell",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Showcase.SM_Doraemon_Showcase"
+      ]
+    },
     {
       "id": "import-20261024104657-b84ca8a4",
       "originalName": "SM_Doraemon_Base.fbx",
