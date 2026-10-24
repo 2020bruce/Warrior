@@ -1,0 +1,354 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-24T04:51:17.036Z",
+  "project": {
+    "name": "Warrior",
+    "title": "魂类战斗设计控制台",
+    "goal": "打造公平、可读、以风险与回报为核心的魂类战斗体验。",
+    "scope": "单人垂直切片：1 个回环区域、3 把武器、5 种敌人、1 个 Boss。",
+    "target": "Windows / 60 FPS / 1440p 目标"
+  },
+  "pillars": [
+    {
+      "id": "fair-challenge",
+      "title": "公平可读的挑战",
+      "summary": "敌人起手、攻击范围和命中时机必须清晰，死亡应归因于玩家决策。"
+    },
+    {
+      "id": "combat-feel",
+      "title": "战斗手感优先",
+      "summary": "输入缓存、后摇、无敌帧、命中停顿和镜头反馈优先于内容数量。"
+    },
+    {
+      "id": "risk-reward",
+      "title": "风险与回报",
+      "summary": "治疗、贪刀、探索和资源回收都必须让玩家主动权衡风险。"
+    },
+    {
+      "id": "interconnected-world",
+      "title": "回环式关卡",
+      "summary": "通过捷径、检查点和纵向空间建立可记忆、可重复探索的路线。"
+    },
+    {
+      "id": "cohesive-audio-visual",
+      "title": "统一的视听语言",
+      "summary": "动画、VFX、音频和镜头共同传达攻击阶段与危险等级。"
+    }
+  ],
+  "phases": [
+    {
+      "id": "foundation",
+      "title": "项目基础",
+      "summary": "代码仓库、工具链、Codex Agent、MCP 和验证入口。",
+      "status": "done",
+      "progress": 100
+    },
+    {
+      "id": "combat-prototype",
+      "title": "核心战斗原型",
+      "summary": "锁定、轻重攻击、翻滚、体力、受击、死亡与重生。",
+      "status": "active",
+      "progress": 25
+    },
+    {
+      "id": "enemy-boss",
+      "title": "敌人与 Boss",
+      "summary": "三种普通敌人、读招、削韧、阶段转换和掉落。",
+      "status": "planned",
+      "progress": 0
+    },
+    {
+      "id": "level-loop",
+      "title": "关卡闭环",
+      "summary": "检查点、捷径、风险奖励和回环路线验证。",
+      "status": "planned",
+      "progress": 0
+    },
+    {
+      "id": "vertical-slice",
+      "title": "垂直切片",
+      "summary": "30 至 60 分钟可展示内容，包含菜单、存档、音频和特效。",
+      "status": "planned",
+      "progress": 0
+    },
+    {
+      "id": "production",
+      "title": "正式生产",
+      "summary": "内容扩展、批量验证、性能优化和发布准备。",
+      "status": "planned",
+      "progress": 0
+    }
+  ],
+  "systems": [
+    {
+      "id": "player",
+      "title": "角色与移动",
+      "owner": "combat-engineer",
+      "status": "active",
+      "summary": "角色移动、胶囊体、镜头弹簧臂和基础转向。",
+      "dependencies": [],
+      "layout": {
+        "x": 0.08,
+        "y": 0.45
+      }
+    },
+    {
+      "id": "input",
+      "title": "输入与缓存",
+      "owner": "combat-engineer",
+      "status": "active",
+      "summary": "Enhanced Input、动作映射、输入缓存和取消窗口。",
+      "dependencies": [
+        "player"
+      ],
+      "layout": {
+        "x": 0.28,
+        "y": 0.18
+      }
+    },
+    {
+      "id": "combat",
+      "title": "战斗核心",
+      "owner": "combat-engineer",
+      "status": "active",
+      "summary": "攻击、伤害、体力、削韧、格挡、弹反和命中停顿。",
+      "dependencies": [
+        "input",
+        "animation"
+      ],
+      "layout": {
+        "x": 0.45,
+        "y": 0.45
+      }
+    },
+    {
+      "id": "animation",
+      "title": "动画与帧数据",
+      "owner": "animation-ai-engineer",
+      "status": "active",
+      "summary": "动画蓝图、Montage、通知、Motion Warping 和帧数据。",
+      "dependencies": [
+        "player"
+      ],
+      "layout": {
+        "x": 0.44,
+        "y": 0.76
+      }
+    },
+    {
+      "id": "enemy_ai",
+      "title": "敌人 AI",
+      "owner": "animation-ai-engineer",
+      "status": "planned",
+      "summary": "感知、追击、攻击选择、读招和 Boss 阶段。",
+      "dependencies": [
+        "combat",
+        "animation"
+      ],
+      "layout": {
+        "x": 0.69,
+        "y": 0.2
+      }
+    },
+    {
+      "id": "world",
+      "title": "关卡与检查点",
+      "owner": "content-engineer",
+      "status": "planned",
+      "summary": "灰盒战斗场、捷径、检查点和敌人布置。",
+      "dependencies": [
+        "player",
+        "combat"
+      ],
+      "layout": {
+        "x": 0.7,
+        "y": 0.52
+      }
+    },
+    {
+      "id": "ui",
+      "title": "HUD 与菜单",
+      "owner": "ui-engineer",
+      "status": "planned",
+      "summary": "生命、体力、锁定目标、死亡界面和 CommonUI 菜单。",
+      "dependencies": [
+        "combat"
+      ],
+      "layout": {
+        "x": 0.88,
+        "y": 0.28
+      }
+    },
+    {
+      "id": "audio",
+      "title": "音频反馈",
+      "owner": "audio-engineer",
+      "status": "planned",
+      "summary": "攻击、命中、格挡、危险提示和环境氛围。",
+      "dependencies": [
+        "combat",
+        "animation"
+      ],
+      "layout": {
+        "x": 0.55,
+        "y": 0.94
+      }
+    },
+    {
+      "id": "save",
+      "title": "存档与进度",
+      "owner": "systems-engineer",
+      "status": "planned",
+      "summary": "检查点恢复、死亡掉落、永久进度和存档迁移。",
+      "dependencies": [
+        "world"
+      ],
+      "layout": {
+        "x": 0.88,
+        "y": 0.75
+      }
+    }
+  ],
+  "features": [
+    {
+      "id": "lock-on",
+      "title": "锁定与目标切换",
+      "systemId": "combat",
+      "status": "active",
+      "priority": 1,
+      "owner": "combat-engineer",
+      "notes": "支持鼠标和手柄切换目标，镜头需要避障。"
+    },
+    {
+      "id": "light-attack",
+      "title": "轻攻击连段",
+      "systemId": "combat",
+      "status": "active",
+      "priority": 1,
+      "owner": "combat-engineer",
+      "notes": "每段攻击必须有独立起手、判定和后摇。"
+    },
+    {
+      "id": "dodge-iframes",
+      "title": "翻滚与无敌帧",
+      "systemId": "combat",
+      "status": "active",
+      "priority": 1,
+      "owner": "combat-engineer",
+      "notes": "方向、体力、无敌窗口和结束保护需要数据驱动。"
+    },
+    {
+      "id": "stamina",
+      "title": "体力系统",
+      "systemId": "combat",
+      "status": "active",
+      "priority": 1,
+      "owner": "combat-engineer",
+      "notes": "攻击、翻滚、格挡消耗和恢复延迟。"
+    },
+    {
+      "id": "input-buffer",
+      "title": "输入缓存",
+      "systemId": "input",
+      "status": "active",
+      "priority": 1,
+      "owner": "combat-engineer",
+      "notes": "缓存窗口必须短且可观测。"
+    },
+    {
+      "id": "hitstop",
+      "title": "命中停顿与镜头反馈",
+      "systemId": "combat",
+      "status": "active",
+      "priority": 2,
+      "owner": "combat-engineer",
+      "notes": "不同武器和命中类型需要可配置强度。"
+    },
+    {
+      "id": "block",
+      "title": "格挡",
+      "systemId": "combat",
+      "status": "planned",
+      "priority": 2,
+      "owner": "combat-engineer",
+      "notes": "正面减伤、体力消耗和破防反应。"
+    },
+    {
+      "id": "parry",
+      "title": "弹反",
+      "systemId": "combat",
+      "status": "planned",
+      "priority": 2,
+      "owner": "combat-engineer",
+      "notes": "精确窗口、成功反馈和处决入口。"
+    },
+    {
+      "id": "poise",
+      "title": "削韧与硬直",
+      "systemId": "combat",
+      "status": "planned",
+      "priority": 2,
+      "owner": "combat-engineer",
+      "notes": "玩家和敌人都需要独立韧性数据。"
+    },
+    {
+      "id": "enemy-telegraph",
+      "title": "敌人读招",
+      "systemId": "enemy_ai",
+      "status": "planned",
+      "priority": 1,
+      "owner": "animation-ai-engineer",
+      "notes": "起手姿势、音效和特效必须一致。"
+    },
+    {
+      "id": "checkpoint",
+      "title": "检查点与死亡重生",
+      "systemId": "world",
+      "status": "planned",
+      "priority": 1,
+      "owner": "content-engineer",
+      "notes": "死亡掉落、恢复和敌人重置。"
+    },
+    {
+      "id": "boss-phases",
+      "title": "Boss 阶段转换",
+      "systemId": "enemy_ai",
+      "status": "planned",
+      "priority": 2,
+      "owner": "animation-ai-engineer",
+      "notes": "阶段阈值、招式池和过场反馈。"
+    }
+  ],
+  "loop": [
+    {
+      "id": "explore",
+      "title": "探索",
+      "summary": "观察环境、敌人和资源风险。"
+    },
+    {
+      "id": "encounter",
+      "title": "遭遇",
+      "summary": "进入战斗空间并建立锁定或脱离。"
+    },
+    {
+      "id": "read",
+      "title": "读招",
+      "summary": "识别敌人起手、距离和危险等级。"
+    },
+    {
+      "id": "decide",
+      "title": "决策",
+      "summary": "在攻击、格挡、翻滚和撤退之间权衡。"
+    },
+    {
+      "id": "resolve",
+      "title": "结算",
+      "summary": "命中、受击、削韧和资源变化。"
+    },
+    {
+      "id": "recover",
+      "title": "恢复",
+      "summary": "通过检查点、治疗或捷径重新建立节奏。"
+    }
+  ]
+}

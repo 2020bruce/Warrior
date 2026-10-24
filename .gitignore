@@ -1,0 +1,47 @@
+# Override global ignores that do not apply to this Unreal repository
+!.gitignore
+!Content/ThirdPerson/LevelPrototyping/Interactable/Target/
+!Content/ThirdPerson/LevelPrototyping/Interactable/Target/**
+
+# Unreal generated output
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+.vs/
+*.sln
+*.slnx
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# Plugin build output
+Plugins/**/Binaries/
+Plugins/**/Intermediate/
+
+# Local Codex overrides
+.codex/config.toml
+.codex/*.local.toml
+.mcp.json
+.cursor/
+.gemini/
+.githooks/
+*.soulforge.bak
+.soulforge/config.json
+.soulforge/*.bak
+.warrior/design.backup.json
+
+# Blender backups and temporary exports
+*.blend1
+*.blend2
+*.blend@
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini

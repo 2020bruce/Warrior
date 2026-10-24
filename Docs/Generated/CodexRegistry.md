@@ -1,0 +1,28 @@
+# Codex 注册表
+
+> 本文件由 SoulForge DocSync 自动生成，请勿手动编辑。
+
+## Agent
+
+| Agent | 说明 | 文件 |
+|---|---|---|
+| `@animation-ai-engineer` | 负责魂类项目动画蓝图、Montage、动画通知、Motion Warping、StateTree、敌人 AI、感知和 Boss 行为资产。 | `.codex/agents/animation-ai-engineer.toml` |
+| `@blender-asset-artist` | 负责 Blender 源资产、MCP 辅助建模与场景操作、重定向准备、LOD、碰撞命名和 Unreal 导入验证。 | `.codex/agents/blender-asset-artist.toml` |
+| `@combat-engineer` | 负责魂类战斗 C++、能力、伤害流程、输入窗口、体力、削韧、锁定和战斗数据契约。 | `.codex/agents/combat-engineer.toml` |
+| `@docs-maintainer` | 负责源码、配置、设计数据和 Codex 集成变化后的文档漂移检查、生成索引和人工设计文档同步。 | `.codex/agents/docs-maintainer.toml` |
+| `@verifier` | 独立验证编译、Blueprint 与 StateTree 状态、PIE 场景、日志、资产、Git LFS 和性能证据。 | `.codex/agents/verifier.toml` |
+
+## Skill
+
+| Skill | 说明 | 文件 |
+|---|---|---|
+| `$blender-asset-pipeline` | 用于 UE 魂类项目的 Blender 建模、MCP 场景自动化、重定向准备、网格与动画导出、LOD、碰撞命名和 Unreal 导入验证。 | `.codex/skills/blender-asset-pipeline/SKILL.md` |
+| `$soulslike-combat` | 用于设计或实现魂类近战战斗、攻击帧数据、输入缓存、翻滚、体力、削韧、锁定、弹反、受击反应或 Boss 战。 | `.codex/skills/soulslike-combat/SKILL.md` |
+| `$soulslike-docs-sync` | 用于文件变更后的文档漂移检查、生成文档重建、设计文档同步和 Git 提交门禁。 | `.codex/skills/soulslike-docs-sync/SKILL.md` |
+| `$soulslike-ue-production` | 用于 UE5.8 魂类项目的规划、架构、多 Agent 协调、实现交接和生产流程决策。 | `.codex/skills/soulslike-ue-production/SKILL.md` |
+| `$soulslike-verification` | 用于在报告完成前验证 UE5.8 魂类项目的编译、Blueprint 与 StateTree、PIE 行为、日志、资产、Git LFS 和性能。 | `.codex/skills/soulslike-verification/SKILL.md` |
+
+## MCP
+
+- `unreal-mcp`
+- `blender`

@@ -1,0 +1,26 @@
+{
+  "kitVersion": "0.4.1",
+  "schemaVersion": 2,
+  "channel": "stable",
+  "repository": "2020bruce/SoulslikeForge",
+  "commit": "af9911b7d33620540e7b1d4cc964f41fc6587c52",
+  "installedAt": "2026-10-24T06:05:32.413Z",
+  "installedFiles": {
+    ".codex/agents/animation-ai-engineer.toml": "9cffcf809fe04cd500470594d1fd28568ba9348b89ba69f0148985fe58e87dab",
+    ".codex/agents/blender-asset-artist.toml": "0f61b0ae764079b94ce2acdd2463c93fab323025361889bad7a6f047b98cfca8",
+    ".codex/agents/combat-engineer.toml": "4c233e0561a27afbc731ecd5bc41ecc0e132a1c99bb3426b97c3c7b219dbdcb8",
+    ".codex/agents/docs-maintainer.toml": "95f3820b6349e87c779a3e162b9e827fedddbe74d3d8d7382d00de83a086d30e",
+    ".codex/agents/verifier.toml": "007f56196266484bef3d1ae8c8e406b8152e9825e657ca973277d8fcf1471c7e",
+    ".codex/skills/soulslike-verification/SKILL.md": "6c3b9b2209c7390f322a40c813435c3fa4f8be40bd7ff8da0f92555c235598c8",
+    ".codex/skills/soulslike-ue-production/SKILL.md": "26427b07687a6101717b10aeee00e4834be8536e9f20ca7b464452c891787e1c",
+    ".codex/skills/soulslike-docs-sync/SKILL.md": "ee360346712fcbbc275a0bb4244247c5727db4eb6061db1dc2ce4a8933f3a85b",
+    ".codex/skills/soulslike-combat/SKILL.md": "44e1318e2338806c8a3b1625582e8b01d09f2cadae3f2dda4ea7d8e8aa661873",
+    ".codex/skills/blender-asset-pipeline/SKILL.md": "5c341c88c1f1b7ae76b5ace3b58eccd5e521b4e321c8a1f6595a70190221d8e6",
+    ".soulforge/docs-map.json": "f2f2de8c84e67470a8390efda31795d58518259fcdcd32cffc31c9afb375b924",
+    "Docs/Architecture.md": "99735f2d7a692f33e1bd9b8a9ca6666557e7daf6b63091caa394c75c0838f290",
+    "Docs/AssetPipeline.md": "f32f56d87303ac3e78064e30c792208dcab01d25713ba03475bd2f11ae9b6b23",
+    "Docs/CodexWorkflow.md": "564489edefdae0e8a7112efd3f16827ff228422bca3d43e516753fbd0fcd59ef",
+    "Docs/CombatDesign.md": "137c63be34289cb1069c7b89468917276a365c45f07715e1e83e21bd8e8d7c83",
+    "Docs/DesignDecisions.md": "d7abcd761dfd39ec1a4273fd51dca8af84ee856734b59b207fc121ded0b0bead"
+  }
+}

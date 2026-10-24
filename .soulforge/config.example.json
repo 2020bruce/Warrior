@@ -1,0 +1,33 @@
+{
+  "engineRoot": "D:\\Program Files\\Epic Games\\UE_5.8",
+  "projectFile": "Warrior.uproject",
+  "designFile": ".soulforge\\design.json",
+  "blenderExe": "D:\\Program\\Blender\\blender-4.5.15-windows-x64\\blender.exe",
+  "uvxExe": "D:\\Program\\uv\\uvx.exe",
+  "defaultTarget": "WarriorEditor",
+  "defaultPlatform": "Win64",
+  "defaultConfiguration": "Development",
+  "defaultTestSuite": "Smoke",
+  "studioPort": 4317,
+  "worktree": {
+    "root": "",
+    "maxAgents": 3
+  },
+  "update": {
+    "mode": "notify",
+    "channel": "stable",
+    "checkIntervalHours": 24,
+    "repository": "2020bruce/SoulslikeForge"
+  },
+  "blenderLaunchTimeoutSec": 20,
+  "mcp": {
+    "unreal": {
+      "host": "127.0.0.1",
+      "port": 8000
+    },
+    "blender": {
+      "host": "localhost",
+      "port": 9876
+    }
+  }
+}

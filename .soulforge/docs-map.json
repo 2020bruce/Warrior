@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "generatedDir": "Docs/Generated",
+  "driftFile": "Docs/DocDrift.md",
+  "ignore": [
+    ".git/**",
+    "Binaries/**",
+    "Build/**",
+    "DerivedDataCache/**",
+    "Intermediate/**",
+    "Saved/**",
+    "node_modules/**",
+    "Docs/**",
+    ".idea/**",
+    ".vs/**",
+    ".vscode/**",
+    ".gitignore",
+    ".gitattributes",
+    ".vsconfig",
+    ".soulforge/kit.lock.json",
+    "*.sln",
+    "*.slnx"
+  ],
+  "rules": [
+    {
+      "id": "source-code",
+      "watch": [
+        "Source/**/*.h",
+        "Source/**/*.hpp",
+        "Source/**/*.cpp",
+        "Source/*.cs",
+        "Source/**/*.cs"
+      ],
+      "generate": [
+        "Docs/Generated/SourceIndex.md"
+      ],
+      "review": [
+        "Docs/Architecture.md"
+      ]
+    },
+    {
+      "id": "combat-code",
+      "watch": [
+        "Source/**/Combat/**/*",
+        "Source/**/Characters/**/*",
+        "Source/**/Abilities/**/*"
+      ],
+      "review": [
+        "Docs/CombatDesign.md"
+      ]
+    },
+    {
+      "id": "codex-integration",
+      "watch": [
+        ".codex/**/*.toml",
+        ".codex/**/SKILL.md",
+        ".codex/config.toml",
+        ".mcp.json",
+        ".cursor/mcp.json",
+        ".gemini/settings.json",
+        ".githooks/**",
+        "AGENTS.md",
+        "README.md",
+        "soulforge.cmd"
+      ],
+      "generate": [
+        "Docs/Generated/CodexRegistry.md"
+      ],
+      "review": [
+        "Docs/CodexWorkflow.md"
+      ]
+    },
+    {
+      "id": "design-data",
+      "watch": [
+        ".soulforge/design.json"
+      ],
+      "generate": [
+        "Docs/Generated/DesignSummary.md"
+      ],
+      "review": [
+        "Docs/DesignDecisions.md"
+      ]
+    },
+    {
+      "id": "project-settings",
+      "watch": [
+        "*.uproject",
+        "Config/*.ini",
+        "Config/**/*.ini",
+        ".soulforge/config.json",
+        ".soulforge/config.example.json",
+        ".soulforge/docs-map.json"
+      ],
+      "generate": [
+        "Docs/Generated/ProjectSettings.md"
+      ],
+      "review": [
+        "Docs/Architecture.md"
+      ]
+    },
+    {
+      "id": "assets",
+      "watch": [
+        "SourceArt/**/*",
+        "Content/**/*.uasset",
+        "Content/**/*.umap"
+      ],
+      "generate": [
+        "Docs/Generated/AssetRegistry.md"
+      ],
+      "review": [
+        "Docs/AssetPipeline.md"
+      ]
+    }
+  ]
+}
