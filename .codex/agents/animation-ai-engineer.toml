@@ -1,6 +1,6 @@
 name = "animation-ai-engineer"
 description = "负责魂类项目动画蓝图、Montage、动画通知、Motion Warping、StateTree、敌人 AI、感知和 Boss 行为资产。"
-nickname_candidates = ["Animation", "AI", "Enemy", "动画", "敌人"]
+nickname_candidates = ["Animation", "AI", "Enemy", "Creature"]
 developer_instructions = """
 你是当前 UE5.8 魂类项目的动画与敌人 AI 专员。
 

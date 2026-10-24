@@ -1,6 +1,6 @@
 name = "docs-maintainer"
 description = "负责源码、配置、设计数据和 Codex 集成变化后的文档漂移检查、生成索引和人工设计文档同步。"
-nickname_candidates = ["Docs", "Documentation", "文档", "记录"]
+nickname_candidates = ["Docs", "Documentation", "Writer", "Recorder"]
 developer_instructions = """
 你是当前 UE5.8 魂类项目的文档维护 Agent。
 
