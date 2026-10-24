@@ -21,7 +21,39 @@
     "windowWidth": 1280,
     "windowHeight": 720,
     "minimumDurationSeconds": 90,
-    "extraArgs": []
+    "extraArgs": [],
+    "controls": [
+      {
+        "action": "移动",
+        "keyboard": "W A S D",
+        "gamepad": "左摇杆"
+      },
+      {
+        "action": "视角",
+        "keyboard": "鼠标",
+        "gamepad": "右摇杆"
+      },
+      {
+        "action": "跳跃",
+        "keyboard": "Space",
+        "gamepad": "A / ×"
+      },
+      {
+        "action": "锁定 / 解锁",
+        "keyboard": "鼠标中键",
+        "gamepad": "R3"
+      },
+      {
+        "action": "切换目标",
+        "keyboard": "滚轮 / Q / E",
+        "gamepad": "方向键 ← →"
+      },
+      {
+        "action": "交互",
+        "keyboard": "F",
+        "gamepad": "X / □"
+      }
+    ]
   },
   "worktree": {
     "root": "",

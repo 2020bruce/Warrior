@@ -13,3 +13,6 @@
 - Git LFS 管理 Unreal、Blender、纹理、音频和视频资产。
 - SoulslikeForge 保持为外部套件，游戏仓库不复制套件核心实现。
 - 本机引擎、Blender、MCP 和 CLI 配置不进入版本控制。
+- 制作阶段用于表达里程碑，阶段小任务用于拆分可独立完成和验证的交付；阶段小任务不等同于 Agent 生产任务包。
+- 角色移动和镜头先使用项目现有 Input Mapping 的稳定 C++ 绑定，锁定功能继续使用 Enhanced Input，避免要求蓝图资产才能运行。
+- 试玩操作说明由项目配置驱动，同时在 Standalone 启动时显示短时 HUD，避免键位说明只存在于文档中。

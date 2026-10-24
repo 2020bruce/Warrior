@@ -4,7 +4,7 @@
 
 - 运行时模块：`Warrior`
 - 主要代码目录：`Source/Warrior/Public`、`Source/Warrior/Private`
-- 游戏设计数据：`.soulforge/design.json`
+- 游戏设计数据：`.soulforge/design.json`，包含阶段、阶段小任务、功能、系统和核心循环
 - 制作套件：外部 `SoulslikeForge` 仓库
 - 项目集成：`.soulforge`、`.codex/agents`、`.codex/skills`
 - 本机路径：`.soulforge/config.json`，不进入 Git
@@ -20,6 +20,14 @@
 - 输入使用 Enhanced Input。
 - UI 使用 CommonUI。
 - 资产源文件使用 Blender，并通过 Git LFS 管理。
+
+## 输入与试玩
+
+- 角色移动、镜头和跳跃由 `AWarriorHeroCharacter` 绑定到 `DefaultInput.ini` 的轴与动作映射。
+- 锁定和无目标切换由 `AWarriorHeroController` 使用运行时 Enhanced Input 映射。
+- `AWarriorBaseGameMode` 指定默认角色、PlayerController 和操作提示 HUD。
+- Standalone 试玩使用 `UnrealEditor.exe -game`，不要求先生成安装包。
+- 键鼠与手柄操作表通过 `.soulforge/config.json` 的 `playtest.controls` 配置，并显示在 Studio 验收区。
 
 ## 已启用插件
 
@@ -46,7 +54,7 @@
 
 ## 已知风险
 
-- 当前项目仍处于核心战斗原型阶段。
+- 当前项目仍处于核心战斗原型阶段，移动与镜头已在 Agent 工作树完成运行验证，等待用户验收。
 - GAS、StateTree、CommonUI 等插件已启用，但玩法实现尚未展开。
 - 网络和多人架构尚未确定，默认按单人游戏设计。
 
@@ -64,4 +72,5 @@
 - `Content/`、`SourceArt/` 中的 Unreal、Blender、纹理和音频资产使用 Git LFS。
 - `Config/`、`Source/`、`Docs/` 和设计 JSON 使用普通 Git 对象。
 - `.codex/config.toml`、MCP 客户端配置和 `.soulforge/config.json` 属于本机环境，不提交。
+- `.soulforge/design.backup.json` 由 Studio 保存时生成，不提交。
 - `.sln`、`.slnx`、`Binaries/`、`Intermediate/`、`Saved/` 和 `.vs/` 不提交。
