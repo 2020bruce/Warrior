@@ -16,6 +16,13 @@
       "args": []
     }
   },
+  "playtest": {
+    "map": "/Game/Maps/Lvl_WarriorDevMap.Lvl_WarriorDevMap",
+    "windowWidth": 1280,
+    "windowHeight": 720,
+    "minimumDurationSeconds": 90,
+    "extraArgs": []
+  },
   "worktree": {
     "root": "",
     "maxAgents": 3
