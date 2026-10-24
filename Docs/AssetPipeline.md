@@ -19,8 +19,8 @@
 
 ## Studio 资产工作区
 
-- 资产页扫描 `Content` 中的 `.uasset` 和 `.umap`，可按类型、设计状态和关键词筛选。
-- 可多选资产，统一设置所属系统、用途、状态、标签和说明。
+- 资产页扫描 `Content` 中的 `.uasset` 和 `.umap`，可按类型和关键词筛选。
+- 资产详情可直接在 Unreal 中打开，并在有 Blender 源文件时切换到 Blender 查看。
 - 新源文件先上传到 `SourceArt/Imports/Incoming`，确认目标目录后再导入。
 - 导入通过 UE5.8 `PythonScript` commandlet 执行 `AssetImportTask`。
 - 导入脚本、日志和结果保存在 `Saved/SoulForgeStudio/asset-imports`。
@@ -29,6 +29,18 @@
 - Agent 结果清单保存在 `Saved/SoulForgeStudio/asset-productions`。
 - FBX 会自动登记到导入队列；开启自动导入后由 UE commandlet 写入 `Content`。
 - 自动导入成功的静态网格会写入 `.soulforge/assets.json`，默认标记为 Blender 生成。
+
+## 角色资产示例
+
+`SM_Doraemon_Base` 是当前的可绑定分件角色基础模型：
+
+- 31 个独立网格部件、7 个共享材质，全部保留 UV 和材质槽。
+- 总高度 1.29m，脚底统一位于世界原点，旋转和缩放已应用。
+- 非流形边、零面积面、松散顶点和负体积对象均为 0。
+- FBX 往返验证保持对象数量、尺寸、UV 和材质槽一致。
+- 当前尚未创建 Armature、骨骼、权重和动画，进入动画生产前需要完成绑定。
+- 源文件位于 `SourceArt/Blender/Characters/SM_Doraemon_Base.blend`，UE 资产位于
+  `Content/Assets/Blender/characters`。
 
 ## 命名
 

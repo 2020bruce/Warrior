@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-24T10:05:34.094Z",
+  "updatedAt": "2026-10-24T10:47:18.112Z",
   "designs": {
     "Content/Maps/Lvl_WarriorDevMap.umap": {
       "title": "开发主地图",
@@ -30,6 +30,61 @@
   },
   "imports": [
     {
+      "id": "import-20261024104657-b84ca8a4",
+      "originalName": "SM_Doraemon_Base.fbx",
+      "sourcePath": "SourceArt/Imports/Generated/20261024/import-20261024104657-b84ca8a4-SM_Doraemon_Base.fbx",
+      "destinationPath": "/Game/Assets/Blender/characters",
+      "assetName": "SM_Doraemon_Base",
+      "kind": "mesh",
+      "status": "completed",
+      "size": 962028,
+      "createdAt": "2026-10-24T10:46:57.855Z",
+      "updatedAt": "2026-10-24T10:47:18.112Z",
+      "jobId": "asset-job-20261024104657-9332de26",
+      "logPath": "Saved/SoulForgeStudio/asset-imports/asset-job-20261024104657-9332de26/import.log",
+      "error": null,
+      "importedPaths": [
+        "/Game/Assets/Blender/characters/M_Doraemon_Blue_Matte.M_Doraemon_Blue_Matte",
+        "/Game/Assets/Blender/characters/M_Doraemon_Yellow_Metal.M_Doraemon_Yellow_Metal",
+        "/Game/Assets/Blender/characters/M_Doraemon_Bell_Slit.M_Doraemon_Bell_Slit",
+        "/Game/Assets/Blender/characters/M_Doraemon_Red_Gloss.M_Doraemon_Red_Gloss",
+        "/Game/Assets/Blender/characters/M_Doraemon_Eye_Highlight.M_Doraemon_Eye_Highlight",
+        "/Game/Assets/Blender/characters/M_Doraemon_White_Matte.M_Doraemon_White_Matte",
+        "/Game/Assets/Blender/characters/M_Doraemon_Black_Gloss.M_Doraemon_Black_Gloss",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Arm_L.SM_Doraemon_Base_Arm_L",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Arm_R.SM_Doraemon_Base_Arm_R",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Body.SM_Doraemon_Base_Body",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Head.SM_Doraemon_Base_Head",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Leg_L.SM_Doraemon_Base_Leg_L",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Leg_R.SM_Doraemon_Base_Leg_R",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Bell.SM_Doraemon_Base_Bell",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_BellSlit.SM_Doraemon_Base_BellSlit",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Collar.SM_Doraemon_Base_Collar",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Nose.SM_Doraemon_Base_Nose",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Tail.SM_Doraemon_Base_Tail",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_TailTip.SM_Doraemon_Base_TailTip",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_EyeHighlight_L.SM_Doraemon_Base_EyeHighlight_L",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_EyeHighlight_R.SM_Doraemon_Base_EyeHighlight_R",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_EyeWhite_L.SM_Doraemon_Base_EyeWhite_L",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_EyeWhite_R.SM_Doraemon_Base_EyeWhite_R",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Face.SM_Doraemon_Base_Face",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Foot_L.SM_Doraemon_Base_Foot_L",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Foot_R.SM_Doraemon_Base_Foot_R",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Glove_L.SM_Doraemon_Base_Glove_L",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Glove_R.SM_Doraemon_Base_Glove_R",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Pocket.SM_Doraemon_Base_Pocket",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Mouth.SM_Doraemon_Base_Mouth",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Pupil_L.SM_Doraemon_Base_Pupil_L",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Pupil_R.SM_Doraemon_Base_Pupil_R",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Whisker_L_Lower.SM_Doraemon_Base_Whisker_L_Lower",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Whisker_L_Middle.SM_Doraemon_Base_Whisker_L_Middle",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Whisker_L_Upper.SM_Doraemon_Base_Whisker_L_Upper",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Whisker_R_Lower.SM_Doraemon_Base_Whisker_R_Lower",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Whisker_R_Middle.SM_Doraemon_Base_Whisker_R_Middle",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Whisker_R_Upper.SM_Doraemon_Base_Whisker_R_Upper"
+      ]
+    },
+    {
       "id": "import-20261024100402-a099b574",
       "originalName": "SM_TrialWaystone.fbx",
       "sourcePath": "SourceArt/Imports/Generated/20261024/import-20261024100402-a099b574-SM_TrialWaystone.fbx",
@@ -50,6 +105,37 @@
     }
   ],
   "productions": [
+    {
+      "id": "asset-produce-20261024102943-140305e5",
+      "assetName": "SM_Doraemon_Base",
+      "category": "characters",
+      "description": "用途为游戏NPC/动画展示/个人学习模型。轮廓必须圆润、干净、远距离可读。材质为哑光蓝色塑料身体、白色哑光脸和肚子、红色亮面项圈、黄色金属铃铛、白色手套和脚。时代为现代日常卡通。危险感为 0，亲和、可爱、干净。 必须包含结构：巨大圆形蓝色头部；无耳朵；白色脸部；两只大椭圆形白眼睛和黑色瞳孔；红色圆鼻子；每侧三根黑色胡须；微笑嘴；红色项圈；黄色铃铛；白色半圆形四次元口袋；蓝色短圆手臂；白色圆形手套；蓝色短圆腿；白色圆脚；红色细尾巴带小圆球端。模型为 A-Pose，左右对称，部件分离且命名清晰，四边面为主，低中模，适合绑定和导出 FBX/GLB 到 Unreal。",
+      "style": "日系卡通、干净赛璐璐、柔和塑料质感、低中模游戏资产、非写实、轮廓可读、无复杂机械细节、无毛发。不要写实猫解剖结构，不要耳朵，不要商标文字和Logo。",
+      "dimensions": "总高约 1.29m，头身比约 1:1，头部巨大且圆润，身体短圆，真实世界比例，单位米",
+      "targetPath": "/Game/Assets/Blender/characters",
+      "autoImport": true,
+      "agent": "asset-production-engineer",
+      "status": "completed",
+      "promptPath": "Saved/SoulForgeStudio/asset-productions/asset-produce-20261024102943-140305e5/prompt.md",
+      "logPath": "Saved/SoulForgeStudio/asset-productions/asset-produce-20261024102943-140305e5/agent.log",
+      "lastMessagePath": "Saved/SoulForgeStudio/asset-productions/asset-produce-20261024102943-140305e5/last-message.md",
+      "resultPath": "Saved/SoulForgeStudio/asset-productions/asset-produce-20261024102943-140305e5/result.json",
+      "pid": null,
+      "createdAt": "2026-10-24T10:29:43.774Z",
+      "startedAt": "2026-10-24T10:29:43.774Z",
+      "finishedAt": "2026-10-24T10:46:57.852Z",
+      "error": null,
+      "blendFiles": [
+        "SourceArt/Blender/characters/SM_Doraemon_Base.blend"
+      ],
+      "previewFiles": [
+        "SourceArt/Exports/characters/SM_Doraemon_Base_preview.png",
+        "SourceArt/Exports/characters/SM_Doraemon_Base_preview_back.png"
+      ],
+      "importIds": [
+        "import-20261024104657-b84ca8a4"
+      ]
+    },
     {
       "id": "asset-produce-20261024095437-aa12e304",
       "assetName": "SM_TrialWaystone",
