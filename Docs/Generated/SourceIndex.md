@@ -8,12 +8,18 @@
 |---|---|
 | `Source/Warrior/Private/Characters/WarriorBaseCharacter.cpp` | - |
 | `Source/Warrior/Private/Characters/WarriorHeroCharacter.cpp` | - |
+| `Source/Warrior/Private/Combat/LockOnTargeting.h` | - |
+| `Source/Warrior/Private/Combat/WarriorLockOnTrainingTarget.cpp` | - |
 | `Source/Warrior/Private/Controllers/WarriorHeroController.cpp` | - |
 | `Source/Warrior/Private/GameModes/WarriorBaseGameMode.cpp` | - |
+| `Source/Warrior/Private/Tests/WarriorLockOnTests.cpp` | - |
+| `Source/Warrior/Private/UI/WarriorControlsHUD.cpp` | - |
 | `Source/Warrior/Public/Characters/WarriorBaseCharacter.h` | `AWarriorBaseCharacter` |
 | `Source/Warrior/Public/Characters/WarriorHeroCharacter.h` | `AWarriorHeroCharacter` |
+| `Source/Warrior/Public/Combat/WarriorLockOnTrainingTarget.h` | `AWarriorLockOnTrainingTarget` |
 | `Source/Warrior/Public/Controllers/WarriorHeroController.h` | `AWarriorHeroController` |
 | `Source/Warrior/Public/GameModes/WarriorBaseGameMode.h` | `AWarriorBaseGameMode` |
+| `Source/Warrior/Public/UI/WarriorControlsHUD.h` | `AWarriorControlsHUD` |
 | `Source/Warrior/Public/WarriorDebugHelper.h` | - |
 | `Source/Warrior/Warrior.cpp` | - |
 | `Source/Warrior/Warrior.h` | - |

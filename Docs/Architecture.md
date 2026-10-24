@@ -29,6 +29,8 @@
 - 当前主角外观是 129cm 高的静态网格；胶囊半径 52cm、半高 72cm，移动、镜头和跳跃仍使用 ACharacter。
 - 静态主角尚未绑定骨骼动画，原 `SK_CharM_Barbarous` 仅保留在 Blueprint 中用于后续动画试验。
 - 锁定和无目标切换由 `AWarriorHeroController` 使用运行时 Enhanced Input 映射。
+- 锁定候选评分、视线检查和目标切换集中在 `LockOnTargeting`，距离、角度和断锁宽限由 `DefaultGame.ini` 配置。
+- `AWarriorBaseGameMode` 可在空场景生成锁定训练目标，`WarriorControlsHUD` 负责显示键鼠、手柄和锁定状态。
 - `AWarriorBaseGameMode` 指定默认角色、PlayerController 和操作提示 HUD。
 - Standalone 试玩使用 `UnrealEditor.exe -game`，不要求先生成安装包。
 - 键鼠与手柄操作表通过 `.soulforge/config.json` 的 `playtest.controls` 配置，并显示在 Studio 验收区。
