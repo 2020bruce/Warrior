@@ -1,10 +1,10 @@
 {
-  "kitVersion": "0.5.0",
+  "kitVersion": "0.6.0",
   "schemaVersion": 2,
   "channel": "stable",
   "repository": "2020bruce/SoulslikeForge",
-  "commit": "7c126f11e5257db8168992daa29bae539ec4f3aa",
-  "installedAt": "2026-10-24T06:45:26.768Z",
+  "commit": "d3d2e703906daa832842e007c8a9d78547294ae1",
+  "installedAt": "2026-10-24T07:02:57.080Z",
   "installedFiles": {
     ".codex/agents/animation-ai-engineer.toml": "9cffcf809fe04cd500470594d1fd28568ba9348b89ba69f0148985fe58e87dab",
     ".codex/agents/blender-asset-artist.toml": "0f61b0ae764079b94ce2acdd2463c93fab323025361889bad7a6f047b98cfca8",
