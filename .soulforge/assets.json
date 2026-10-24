@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-24T11:17:39.024Z",
+  "designs": {
+    "Content/Maps/Lvl_WarriorDevMap.umap": {
+      "title": "开发主地图",
+      "systemId": "world",
+      "role": "dev-playground",
+      "status": "approved",
+      "tags": [
+        "playtest",
+        "graybox"
+      ],
+      "notes": "Warrior 当前 standalone 试玩与关卡验证使用的主地图。",
+      "updatedAt": "2026-10-24T09:15:41.790Z"
+    },
+    "Content/Assets/Blender/props/SM_TrialWaystone.uasset": {
+      "title": "试炼路标石",
+      "systemId": "world",
+      "role": "navigation-marker",
+      "status": "planned",
+      "tags": [
+        "props",
+        "waystone",
+        "blender"
+      ],
+      "notes": "由 Blender 资产制作 Agent 生成的灰盒路线标记。",
+      "updatedAt": "2026-10-24T10:05:34.094Z"
+    },
+    "Content/Assets/Blender/characters/SM_Doraemon_Showcase.uasset": {
+      "title": "哆啦A梦主角",
+      "systemId": "player",
+      "role": "hero-visual",
+      "status": "approved",
+      "tags": [
+        "player",
+        "hero",
+        "doraemon",
+        "blender",
+        "static-mesh"
+      ],
+      "notes": "当前 Warrior 主角外观。由 AWarriorHeroCharacter 的 DoraemonMeshComponent 显示，保留 ACharacter 胶囊、移动、镜头和 GameMode 流程；暂未绑定骨骼动画。",
+      "updatedAt": "2026-10-24T11:17:39.024Z"
+    }
+  },
+  "imports": [
+    {
+      "id": "import-20261024110023-1b3e76d7",
+      "originalName": "SM_Doraemon_Showcase.fbx",
+      "sourcePath": "SourceArt/Imports/Incoming/20261024/import-20261024110023-1b3e76d7-SM_Doraemon_Showcase.fbx",
+      "destinationPath": "/Game/Assets/Blender/characters",
+      "assetName": "SM_Doraemon_Showcase",
+      "kind": "mesh",
+      "status": "completed",
+      "size": 2478844,
+      "createdAt": "2026-10-24T11:00:23.910Z",
+      "updatedAt": "2026-10-24T11:00:58.151Z",
+      "jobId": "asset-job-20261024110030-8d8bbcbc",
+      "logPath": "Saved/SoulForgeStudio/asset-imports/asset-job-20261024110030-8d8bbcbc/import.log",
+      "error": null,
+      "importedPaths": [
+        "/Game/Assets/Blender/characters/M_Doraemon_Blue.M_Doraemon_Blue",
+        "/Game/Assets/Blender/characters/M_Doraemon_Face.M_Doraemon_Face",
+        "/Game/Assets/Blender/characters/M_Doraemon_White.M_Doraemon_White",
+        "/Game/Assets/Blender/characters/M_Doraemon_Pocket.M_Doraemon_Pocket",
+        "/Game/Assets/Blender/characters/M_Doraemon_Black.M_Doraemon_Black",
+        "/Game/Assets/Blender/characters/M_Doraemon_Highlight.M_Doraemon_Highlight",
+        "/Game/Assets/Blender/characters/M_Doraemon_Red.M_Doraemon_Red",
+        "/Game/Assets/Blender/characters/M_Doraemon_Bell.M_Doraemon_Bell",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Showcase.SM_Doraemon_Showcase"
+      ]
+    },
+    {
+      "id": "import-20261024104657-b84ca8a4",
+      "originalName": "SM_Doraemon_Base.fbx",
+      "sourcePath": "SourceArt/Imports/Generated/20261024/import-20261024104657-b84ca8a4-SM_Doraemon_Base.fbx",
+      "destinationPath": "/Game/Assets/Blender/characters",
+      "assetName": "SM_Doraemon_Base",
+      "kind": "mesh",
+      "status": "completed",
+      "size": 962028,
+      "createdAt": "2026-10-24T10:46:57.855Z",
+      "updatedAt": "2026-10-24T10:47:18.112Z",
+      "jobId": "asset-job-20261024104657-9332de26",
+      "logPath": "Saved/SoulForgeStudio/asset-imports/asset-job-20261024104657-9332de26/import.log",
+      "error": null,
+      "importedPaths": [
+        "/Game/Assets/Blender/characters/M_Doraemon_Blue_Matte.M_Doraemon_Blue_Matte",
+        "/Game/Assets/Blender/characters/M_Doraemon_Yellow_Metal.M_Doraemon_Yellow_Metal",
+        "/Game/Assets/Blender/characters/M_Doraemon_Bell_Slit.M_Doraemon_Bell_Slit",
+        "/Game/Assets/Blender/characters/M_Doraemon_Red_Gloss.M_Doraemon_Red_Gloss",
+        "/Game/Assets/Blender/characters/M_Doraemon_Eye_Highlight.M_Doraemon_Eye_Highlight",
+        "/Game/Assets/Blender/characters/M_Doraemon_White_Matte.M_Doraemon_White_Matte",
+        "/Game/Assets/Blender/characters/M_Doraemon_Black_Gloss.M_Doraemon_Black_Gloss",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Arm_L.SM_Doraemon_Base_Arm_L",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Arm_R.SM_Doraemon_Base_Arm_R",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Body.SM_Doraemon_Base_Body",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Head.SM_Doraemon_Base_Head",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Leg_L.SM_Doraemon_Base_Leg_L",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Leg_R.SM_Doraemon_Base_Leg_R",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Bell.SM_Doraemon_Base_Bell",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_BellSlit.SM_Doraemon_Base_BellSlit",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Collar.SM_Doraemon_Base_Collar",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Nose.SM_Doraemon_Base_Nose",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Tail.SM_Doraemon_Base_Tail",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_TailTip.SM_Doraemon_Base_TailTip",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_EyeHighlight_L.SM_Doraemon_Base_EyeHighlight_L",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_EyeHighlight_R.SM_Doraemon_Base_EyeHighlight_R",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_EyeWhite_L.SM_Doraemon_Base_EyeWhite_L",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_EyeWhite_R.SM_Doraemon_Base_EyeWhite_R",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Face.SM_Doraemon_Base_Face",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Foot_L.SM_Doraemon_Base_Foot_L",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Foot_R.SM_Doraemon_Base_Foot_R",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Glove_L.SM_Doraemon_Base_Glove_L",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Glove_R.SM_Doraemon_Base_Glove_R",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Pocket.SM_Doraemon_Base_Pocket",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Mouth.SM_Doraemon_Base_Mouth",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Pupil_L.SM_Doraemon_Base_Pupil_L",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Pupil_R.SM_Doraemon_Base_Pupil_R",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Whisker_L_Lower.SM_Doraemon_Base_Whisker_L_Lower",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Whisker_L_Middle.SM_Doraemon_Base_Whisker_L_Middle",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Whisker_L_Upper.SM_Doraemon_Base_Whisker_L_Upper",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Whisker_R_Lower.SM_Doraemon_Base_Whisker_R_Lower",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Whisker_R_Middle.SM_Doraemon_Base_Whisker_R_Middle",
+        "/Game/Assets/Blender/characters/SM_Doraemon_Base_Whisker_R_Upper.SM_Doraemon_Base_Whisker_R_Upper"
+      ]
+    },
+    {
+      "id": "import-20261024100402-a099b574",
+      "originalName": "SM_TrialWaystone.fbx",
+      "sourcePath": "SourceArt/Imports/Generated/20261024/import-20261024100402-a099b574-SM_TrialWaystone.fbx",
+      "destinationPath": "/Game/Assets/Blender/props",
+      "assetName": "SM_TrialWaystone",
+      "kind": "mesh",
+      "status": "completed",
+      "size": 55500,
+      "createdAt": "2026-10-24T10:04:02.597Z",
+      "updatedAt": "2026-10-24T10:05:21.865Z",
+      "jobId": "asset-job-20261024100402-f6144fb7",
+      "logPath": "Saved/SoulForgeStudio/asset-imports/asset-job-20261024100402-f6144fb7/import.log",
+      "error": null,
+      "importedPaths": [
+        "/Game/Assets/Blender/props/M_SM_TrialWaystone.M_SM_TrialWaystone",
+        "/Game/Assets/Blender/props/SM_TrialWaystone.SM_TrialWaystone"
+      ]
+    }
+  ],
+  "productions": [
+    {
+      "id": "asset-produce-20261024102943-140305e5",
+      "assetName": "SM_Doraemon_Base",
+      "category": "characters",
+      "description": "用途为游戏NPC/动画展示/个人学习模型。轮廓必须圆润、干净、远距离可读。材质为哑光蓝色塑料身体、白色哑光脸和肚子、红色亮面项圈、黄色金属铃铛、白色手套和脚。时代为现代日常卡通。危险感为 0，亲和、可爱、干净。 必须包含结构：巨大圆形蓝色头部；无耳朵；白色脸部；两只大椭圆形白眼睛和黑色瞳孔；红色圆鼻子；每侧三根黑色胡须；微笑嘴；红色项圈；黄色铃铛；白色半圆形四次元口袋；蓝色短圆手臂；白色圆形手套；蓝色短圆腿；白色圆脚；红色细尾巴带小圆球端。模型为 A-Pose，左右对称，部件分离且命名清晰，四边面为主，低中模，适合绑定和导出 FBX/GLB 到 Unreal。",
+      "style": "日系卡通、干净赛璐璐、柔和塑料质感、低中模游戏资产、非写实、轮廓可读、无复杂机械细节、无毛发。不要写实猫解剖结构，不要耳朵，不要商标文字和Logo。",
+      "dimensions": "总高约 1.29m，头身比约 1:1，头部巨大且圆润，身体短圆，真实世界比例，单位米",
+      "targetPath": "/Game/Assets/Blender/characters",
+      "autoImport": true,
+      "agent": "asset-production-engineer",
+      "status": "completed",
+      "promptPath": "Saved/SoulForgeStudio/asset-productions/asset-produce-20261024102943-140305e5/prompt.md",
+      "logPath": "Saved/SoulForgeStudio/asset-productions/asset-produce-20261024102943-140305e5/agent.log",
+      "lastMessagePath": "Saved/SoulForgeStudio/asset-productions/asset-produce-20261024102943-140305e5/last-message.md",
+      "resultPath": "Saved/SoulForgeStudio/asset-productions/asset-produce-20261024102943-140305e5/result.json",
+      "pid": null,
+      "createdAt": "2026-10-24T10:29:43.774Z",
+      "startedAt": "2026-10-24T10:29:43.774Z",
+      "finishedAt": "2026-10-24T10:46:57.852Z",
+      "error": null,
+      "blendFiles": [
+        "SourceArt/Blender/characters/SM_Doraemon_Base.blend"
+      ],
+      "previewFiles": [
+        "SourceArt/Exports/characters/SM_Doraemon_Base_preview.png",
+        "SourceArt/Exports/characters/SM_Doraemon_Base_preview_back.png"
+      ],
+      "importIds": [
+        "import-20261024104657-b84ca8a4"
+      ]
+    },
+    {
+      "id": "asset-produce-20261024095437-aa12e304",
+      "assetName": "SM_TrialWaystone",
+      "category": "props",
+      "description": "低矮破损的试炼路标石，顶部有微弱暖色刻痕，适合魂类灰盒场景作为路线标记。低多边形，无骨骼，单材质。",
+      "style": "黑暗奇幻，风化灰色石材，克制的暖色发光刻痕",
+      "dimensions": "高 0.8m，宽 0.45m，深 0.35m，真实比例",
+      "targetPath": "/Game/Assets/Blender/props",
+      "autoImport": true,
+      "agent": "asset-production-engineer",
+      "status": "completed",
+      "promptPath": "Saved/SoulForgeStudio/asset-productions/asset-produce-20261024095437-aa12e304/prompt.md",
+      "logPath": "Saved/SoulForgeStudio/asset-productions/asset-produce-20261024095437-aa12e304/agent.log",
+      "lastMessagePath": "Saved/SoulForgeStudio/asset-productions/asset-produce-20261024095437-aa12e304/last-message.md",
+      "resultPath": "Saved/SoulForgeStudio/asset-productions/asset-produce-20261024095437-aa12e304/result.json",
+      "pid": null,
+      "createdAt": "2026-10-24T09:54:37.348Z",
+      "startedAt": "2026-10-24T09:54:37.348Z",
+      "finishedAt": "2026-10-24T10:04:02.594Z",
+      "error": null,
+      "blendFiles": [
+        "SourceArt/Blender/props/SM_TrialWaystone.blend"
+      ],
+      "previewFiles": [
+        "SourceArt/Exports/props/SM_TrialWaystone_preview.png"
+      ],
+      "importIds": [
+        "import-20261024100402-a099b574"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+---
+name: asset-production
+description: 用于从 Studio 资产需求创建 Blender 模型、保存源文件、导出 FBX/预览并交付 Unreal 导入清单。
+metadata:
+  short-description: Blender 资产制作与导入交付
+---
+
+# 资产制作交付
+
+## 流程
+
+1. 读取 Studio 生成的 prompt 和资产需求。
+2. 启动或复用 Blender 4.5.15，优先使用 `blender` MCP。
+3. 建立真实几何体、材质、UV 和符合 Unreal 约定的命名。
+4. 保存可编辑 `.blend`。
+5. 只导出需要导入的对象为 FBX，应用旋转和缩放。
+6. 渲染一张能辨认轮廓、材质和比例的预览图。
+7. 写入 Studio 指定的 `result.json`。
+8. 返回生成文件、Blender 检查结果和剩余风险。
+
+## 目录
+
+```text
+SourceArt/Blender/<分类>/<资产名>.blend
+SourceArt/Exports/<分类>/<资产名>.fbx
+SourceArt/Exports/<分类>/<资产名>_preview.png
+```
+
+## 禁止
+
+- 不直接创建或修改 `Content` 中的 `.uasset`
+- 不使用空物体或未导出的场景冒充资产
+- 不覆盖已完成且不在当前需求中的源资产
+- 不执行 Git push
+
+## 验证
+
+- `.blend`、FBX 和预览图均存在且大小非零
+- 几何体面数大于零
+- 单位、缩放、旋转和原点合理
+- 法线朝外，UV 和材质槽无意外丢失
+- FBX 导入目标路径和资产名已写入结果清单

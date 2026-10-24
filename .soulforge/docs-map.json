@@ -104,7 +104,8 @@
       "watch": [
         "SourceArt/**/*",
         "Content/**/*.uasset",
-        "Content/**/*.umap"
+        "Content/**/*.umap",
+        ".soulforge/assets.json"
       ],
       "generate": [
         "Docs/Generated/AssetRegistry.md"

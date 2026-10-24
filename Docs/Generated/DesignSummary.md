@@ -11,7 +11,7 @@
 
 ## 功能状态
 
-- active：6
+- active：7
 - planned：6
 
 ## 阶段

@@ -6,20 +6,36 @@
 
 | 目录 | 文件数 |
 |---|---:|
-| `Content/Assets` | 632 |
+| `Content/Assets` | 681 |
 | `Content/GameModes` | 1 |
 | `Content/Maps` | 1 |
 | `Content/PlayerCharacter` | 2 |
 | `Content/ThirdPerson` | 171 |
 | `Content/__ExternalActors__` | 130 |
 | `Content/__ExternalObjects__` | 4 |
-| `SourceArt/Blender` | 4 |
-| `SourceArt/Exports` | 1 |
+| `SourceArt/Blender` | 7 |
+| `SourceArt/Exports` | 10 |
+| `SourceArt/Imports` | 3 |
 
 ## SourceArt
 
 - `SourceArt/Blender/Characters/.gitkeep`
+- `SourceArt/Blender/Characters/SM_Doraemon_Base.blend`
+- `SourceArt/Blender/Characters/SM_Doraemon_Showcase.blend`
 - `SourceArt/Blender/Enemies/.gitkeep`
 - `SourceArt/Blender/Environment/.gitkeep`
 - `SourceArt/Blender/Weapons/.gitkeep`
+- `SourceArt/Blender/props/SM_TrialWaystone.blend`
 - `SourceArt/Exports/.gitkeep`
+- `SourceArt/Exports/characters/SM_Doraemon_Base.fbx`
+- `SourceArt/Exports/characters/SM_Doraemon_Base_preview.png`
+- `SourceArt/Exports/characters/SM_Doraemon_Base_preview_back.png`
+- `SourceArt/Exports/characters/SM_Doraemon_Showcase.fbx`
+- `SourceArt/Exports/characters/SM_Doraemon_Showcase_preview.png`
+- `SourceArt/Exports/characters/SM_Doraemon_Showcase_preview_back.png`
+- `SourceArt/Exports/characters/SM_Doraemon_Showcase_preview_face.png`
+- `SourceArt/Exports/props/SM_TrialWaystone.fbx`
+- `SourceArt/Exports/props/SM_TrialWaystone_preview.png`
+- `SourceArt/Imports/Generated/20261024/import-20261024100402-a099b574-SM_TrialWaystone.fbx`
+- `SourceArt/Imports/Generated/20261024/import-20261024104657-b84ca8a4-SM_Doraemon_Base.fbx`
+- `SourceArt/Imports/Incoming/20261024/import-20261024110023-1b3e76d7-SM_Doraemon_Showcase.fbx`

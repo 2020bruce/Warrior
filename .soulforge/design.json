@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-24T04:51:17.036Z",
+  "updatedAt": "2026-10-24T08:47:53.604Z",
   "project": {
     "name": "Warrior",
     "title": "魂类战斗设计控制台",
@@ -41,42 +41,107 @@
       "title": "项目基础",
       "summary": "代码仓库、工具链、Codex Agent、MCP 和验证入口。",
       "status": "done",
-      "progress": 100
+      "progress": 100,
+      "tasks": [
+        {
+          "id": "foundation-repository",
+          "title": "建立代码仓库与构建",
+          "summary": "UE5.8 工程可编译，Git 和 LFS 配置可用。",
+          "status": "done",
+          "owner": "systems-engineer"
+        },
+        {
+          "id": "foundation-agent-workflow",
+          "title": "接通 Agent 工作树",
+          "summary": "Studio 可以创建隔离工作树并派发任务。",
+          "status": "done",
+          "owner": "combat-engineer"
+        },
+        {
+          "id": "foundation-playtest-loop",
+          "title": "建立可体验验收闭环",
+          "summary": "构建成功后可启动 standalone 试玩并记录会话。",
+          "status": "done",
+          "owner": "combat-engineer"
+        }
+      ]
     },
     {
       "id": "combat-prototype",
       "title": "核心战斗原型",
       "summary": "锁定、轻重攻击、翻滚、体力、受击、死亡与重生。",
       "status": "active",
-      "progress": 25
+      "progress": 25,
+      "tasks": [
+        {
+          "id": "prototype-player-movement",
+          "title": "角色移动与镜头",
+          "summary": "WASD/左摇杆移动，鼠标/右摇杆控制镜头，Space/A 跳跃。",
+          "status": "active",
+          "owner": "combat-engineer"
+        },
+        {
+          "id": "prototype-lock-on",
+          "title": "锁定与目标切换",
+          "summary": "锁定有效目标，支持左右切换并保持镜头跟随。",
+          "status": "active",
+          "owner": "combat-engineer"
+        },
+        {
+          "id": "prototype-input-buffer",
+          "title": "输入缓存",
+          "summary": "为攻击、翻滚和切换目标提供可观测的短缓存窗口。",
+          "status": "planned",
+          "owner": "combat-engineer"
+        },
+        {
+          "id": "prototype-light-attack",
+          "title": "轻攻击连段",
+          "summary": "完成起手、命中、后摇和连段取消窗口。",
+          "status": "planned",
+          "owner": "combat-engineer"
+        }
+      ]
     },
     {
       "id": "enemy-boss",
       "title": "敌人与 Boss",
       "summary": "三种普通敌人、读招、削韧、阶段转换和掉落。",
       "status": "planned",
-      "progress": 0
+      "progress": 0,
+      "tasks": [
+        {
+          "id": "enemy-telegraph-task",
+          "title": "敌人攻击预警",
+          "summary": "用动作、音效和特效明确攻击起手与危险等级。",
+          "status": "planned",
+          "owner": "animation-ai-engineer"
+        }
+      ]
     },
     {
       "id": "level-loop",
       "title": "关卡闭环",
       "summary": "检查点、捷径、风险奖励和回环路线验证。",
       "status": "planned",
-      "progress": 0
+      "progress": 0,
+      "tasks": []
     },
     {
       "id": "vertical-slice",
       "title": "垂直切片",
       "summary": "30 至 60 分钟可展示内容，包含菜单、存档、音频和特效。",
       "status": "planned",
-      "progress": 0
+      "progress": 0,
+      "tasks": []
     },
     {
       "id": "production",
       "title": "正式生产",
       "summary": "内容扩展、批量验证、性能优化和发布准备。",
       "status": "planned",
-      "progress": 0
+      "progress": 0,
+      "tasks": []
     }
   ],
   "systems": [
@@ -210,6 +275,15 @@
     }
   ],
   "features": [
+    {
+      "id": "player-movement",
+      "title": "角色移动与镜头",
+      "systemId": "player",
+      "status": "active",
+      "priority": 1,
+      "owner": "combat-engineer",
+      "notes": "WASD/左摇杆移动，鼠标/右摇杆镜头，Space/A 跳跃，启动时显示操作提示。"
+    },
     {
       "id": "lock-on",
       "title": "锁定与目标切换",

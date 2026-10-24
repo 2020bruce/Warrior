@@ -39,4 +39,7 @@ private:
 	UPROPERTY(EditDefaultsOnly, Config, Category = "Camera|Collision", meta = (AllowPrivateAccess = "true", ClampMin = "1.0"))
 	float CameraCollisionProbeSize = 12.0f;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Appearance", meta = (AllowPrivateAccess = "true"))
+	class UStaticMeshComponent* DoraemonMeshComponent;
+
 };

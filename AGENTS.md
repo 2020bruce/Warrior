@@ -46,6 +46,7 @@
 - Blender 4.5.15 LTS 便携版路径：`D:\Program\Blender\blender-4.5.15-windows-x64\blender.exe`。
 - Blender MCP 已在 `.codex/config.toml` 中配置为 `blender` 服务器。
 - 建模、导出、重定向、碰撞和 UE 导入使用 `$blender-asset-pipeline`。
+- 从 Studio 需求制作完整资产时使用 `@asset-production-engineer` 和 `$asset-production`。
 - 任何 MCP 场景修改前，必须先保存 `.blend`。
 - 没有版本控制或备份时，不得覆盖生产源资产。
 - 在 Unreal 中验证缩放、朝向、枢轴、法线、材质槽、UV、碰撞和导入方向。
@@ -55,6 +56,7 @@
 - 战斗工程师：`Source/Warrior/**/Combat`、战斗角色代码和战斗数据契约。
 - 动画与 AI 工程师：动画蓝图、Montage、StateTree、AI 和敌人行为资产。
 - Blender 资产美术：`SourceArt/Blender`、导出文件、重定向源和导入暂存区。
+- 资产制作工程师：按 Studio 作业生成 `.blend`、FBX、预览和结果清单，不直接修改生产 `.uasset`。
 - 验证 Agent：编译、PIE、自动化、日志和性能证据，不修改生产内容。
 - 主协调 Agent：共享接口、`.Build.cs`、`.uproject` 和跨 Agent 集成。
 

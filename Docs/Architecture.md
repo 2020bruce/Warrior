@@ -4,7 +4,8 @@
 
 - 运行时模块：`Warrior`
 - 主要代码目录：`Source/Warrior/Public`、`Source/Warrior/Private`
-- 游戏设计数据：`.soulforge/design.json`
+- 游戏设计数据：`.soulforge/design.json`，包含阶段、阶段小任务、功能、系统和核心循环
+- 资产设计目录：`.soulforge/assets.json`，记录现有资产用途、系统归属、标签和导入结果
 - 制作套件：外部 `SoulslikeForge` 仓库
 - 项目集成：`.soulforge`、`.codex/agents`、`.codex/skills`
 - 本机路径：`.soulforge/config.json`，不进入 Git
@@ -20,6 +21,25 @@
 - 输入使用 Enhanced Input。
 - UI 使用 CommonUI。
 - 资产源文件使用 Blender，并通过 Git LFS 管理。
+
+## 输入与试玩
+
+- 角色移动、镜头和跳跃由 `AWarriorHeroCharacter` 绑定到 `DefaultInput.ini` 的轴与动作映射。
+- `AWarriorHeroCharacter` 通过 `DoraemonMeshComponent` 显示 `SM_Doraemon_Showcase`，并隐藏继承的骨骼英雄网格。
+- 当前主角外观是 129cm 高的静态网格；胶囊半径 52cm、半高 72cm，移动、镜头和跳跃仍使用 ACharacter。
+- 静态主角尚未绑定骨骼动画，原 `SK_CharM_Barbarous` 仅保留在 Blueprint 中用于后续动画试验。
+- 锁定和无目标切换由 `AWarriorHeroController` 使用运行时 Enhanced Input 映射。
+- `AWarriorBaseGameMode` 指定默认角色、PlayerController 和操作提示 HUD。
+- Standalone 试玩使用 `UnrealEditor.exe -game`，不要求先生成安装包。
+- 键鼠与手柄操作表通过 `.soulforge/config.json` 的 `playtest.controls` 配置，并显示在 Studio 验收区。
+
+## 资产工作区
+
+- Studio 通过文件系统扫描 `Content` 下的 `.uasset` 和 `.umap`，不要求 Unreal Editor 运行。
+- 资产元数据独立保存在 `.soulforge/assets.json`，不修改 Unreal 资产本身。
+- 新源文件先进入 `SourceArt/Imports/Incoming`，再由 UE5.8 Python commandlet 导入。
+- 导入使用 `AssetImportTask`，并将脚本、日志和结果写入项目 `Saved` 目录。
+- 删除暂存记录只会删除对应源文件，不删除已导入的 Unreal 资产。
 
 ## 已启用插件
 
@@ -42,11 +62,13 @@
 - 共享接口和 `.Build.cs` 由主协调 Agent 修改。
 - 地图、Blueprint、动画和 Blender 源文件串行修改。
 - Agent 并行修改 C++ 时使用独立 Git worktree 和互不重叠的写入范围。
+- Agent 代码工作树默认位于游戏仓 `.soulforge/worktrees/`，并由 `.gitignore` 排除。
+- Studio 验收试玩使用所选任务的 worktree；主线预览使用主项目的 `soulforge playtest`。
 - 没有明确需求前，不引入 Game Feature、Mass Entity、PCG 或 World Partition。
 
 ## 已知风险
 
-- 当前项目仍处于核心战斗原型阶段。
+- 当前项目仍处于核心战斗原型阶段，移动与镜头已在 Agent 工作树完成运行验证，等待用户验收。
 - GAS、StateTree、CommonUI 等插件已启用，但玩法实现尚未展开。
 - 网络和多人架构尚未确定，默认按单人游戏设计。
 
@@ -64,4 +86,5 @@
 - `Content/`、`SourceArt/` 中的 Unreal、Blender、纹理和音频资产使用 Git LFS。
 - `Config/`、`Source/`、`Docs/` 和设计 JSON 使用普通 Git 对象。
 - `.codex/config.toml`、MCP 客户端配置和 `.soulforge/config.json` 属于本机环境，不提交。
+- `.soulforge/design.backup.json` 由 Studio 保存时生成，不提交。
 - `.sln`、`.slnx`、`Binaries/`、`Intermediate/`、`Saved/` 和 `.vs/` 不提交。

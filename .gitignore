@@ -33,7 +33,10 @@ Plugins/**/Intermediate/
 .soulforge/config.json
 .soulforge/worktrees.json
 .soulforge/worktree.json
+.soulforge/worktrees/
 .soulforge/*.bak
+.soulforge/*.new
+.soulforge/design.backup.json
 .warrior/design.backup.json
 
 # Blender backups and temporary exports
