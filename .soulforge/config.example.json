@@ -47,11 +47,6 @@
         "action": "切换目标",
         "keyboard": "滚轮 / Q / E",
         "gamepad": "方向键 ← →"
-      },
-      {
-        "action": "交互",
-        "keyboard": "F",
-        "gamepad": "X / □"
       }
     ]
   },

@@ -1,10 +1,10 @@
 {
-  "kitVersion": "0.8.0",
+  "kitVersion": "0.8.1",
   "schemaVersion": 2,
   "channel": "stable",
   "repository": "2020bruce/SoulslikeForge",
-  "commit": "303351ca916ad7633085c7566e123aac79065ca2",
-  "installedAt": "2026-10-24T08:50:17.005Z",
+  "commit": "f4c085eb91001fa8336959a2fca2e14767561241",
+  "installedAt": "2026-10-24T08:52:34.584Z",
   "installedFiles": {
     ".codex/agents/animation-ai-engineer.toml": "9cf2c0d408d221643d72289e90eb09f751c02bb06bd52bbb59a4bb98f6c2ba1b",
     ".codex/agents/blender-asset-artist.toml": "7f5e4411b6e8973b1895a439ccbb191e37119d59775b3c775619303859f08c93",
@@ -17,10 +17,10 @@
     ".codex/skills/soulslike-combat/SKILL.md": "44e1318e2338806c8a3b1625582e8b01d09f2cadae3f2dda4ea7d8e8aa661873",
     ".codex/skills/blender-asset-pipeline/SKILL.md": "5c341c88c1f1b7ae76b5ace3b58eccd5e521b4e321c8a1f6595a70190221d8e6",
     ".soulforge/docs-map.json": "e9851f19618f72ed603b69fb9fdea46f5aea8a2d979c35f6d286c71672f6b401",
-    "Docs/Architecture.md": "b093b58e4ee8f51dc5b6007d7bb8a5e5ac0c347c0e803fc2fc2dd211ad8379ac",
+    "Docs/Architecture.md": "ad3431cf447ec9b4d759a3a34143f943860584fcbe33313239144f7459f7914f",
     "Docs/AssetPipeline.md": "31a966b7606ffa4ffb6f52ef9e0981b2a127f6d98892543f0df4ed0098d16c9e",
     "Docs/CodexWorkflow.md": "843d54ae2d0613f5a4b3b5ce9a926f700dc857c4ec127ffb73299e4a19abd401",
     "Docs/CombatDesign.md": "d49b53a8a81da11c93bce05be64a33f08bd4915c62f2ddf7cec013170cc88511",
-    "Docs/DesignDecisions.md": "deba0ee62b566437453ba40298b475e8a4c2f1a8c3534ddf75cbc41d122c144e"
+    "Docs/DesignDecisions.md": "9c1ab252622538da034ee35b9082aa992ec7a91ddc7adf49d3df8a9167974d1d"
   }
 }
