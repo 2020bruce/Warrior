@@ -1,10 +1,10 @@
 {
-  "kitVersion": "0.18.2",
+  "kitVersion": "0.18.3",
   "schemaVersion": 2,
   "channel": "stable",
   "repository": "2020bruce/SoulslikeForge",
-  "commit": "8944afac843566be782140339698f21c97edbe1a",
-  "installedAt": "2026-10-24T15:17:26.491Z",
+  "commit": "79cefc6c23c596ba4de216b72d6190b39ceb1ce7",
+  "installedAt": "2026-10-24T15:27:06.913Z",
   "installedFiles": {
     ".codex/agents/animation-ai-engineer.toml": "9cf2c0d408d221643d72289e90eb09f751c02bb06bd52bbb59a4bb98f6c2ba1b",
     ".codex/agents/blender-asset-artist.toml": "7f5e4411b6e8973b1895a439ccbb191e37119d59775b3c775619303859f08c93",
@@ -23,7 +23,7 @@
     "Docs/CombatDesign.md": "697201c17ec5b9e6490bb541e19e94776f23a1e60f44dde2f3d7223c3d088ee9",
     "Docs/DesignDecisions.md": "9c1ab252622538da034ee35b9082aa992ec7a91ddc7adf49d3df8a9167974d1d",
     ".codex/agents/asset-production-engineer.toml": "c754f461508717f84fb462ee527f28701a62ad789c30934b194bf213bf886796",
-    ".codex/skills/asset-production/SKILL.md": "c7ada1b8027158e3ebe6b058aeaf483e7d1d2b5ae2ca268ba6f72228bca13b35",
+    ".codex/skills/asset-production/SKILL.md": "fdf0309ffe46c90d58a166e22f30f21a7cb1287e435995aa84d1542bef770858",
     ".codex/agents/asset-optimizer.toml": "65280ba361734962f0fa61169ba04f95d8549357fda66a1027c903020269ac63",
     ".codex/agents/asset-quality-reviewer.toml": "deb4aa1288cc5f0ef676d62d75ba46372c7d5b654ed98ab323f796e98366a9b8",
     ".codex/skills/asset-quality-gate/SKILL.md": "b71f36c642eb85f22a3ed69f6c23721e0f34d7447a89a3a9c9eea1da378ff99a",
