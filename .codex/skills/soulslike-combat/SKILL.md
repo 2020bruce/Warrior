@@ -48,13 +48,25 @@ metadata:
       "gamepad": "RT / 右扳机",
       "notes": "在连段窗口内再次按下可追加下一段"
     }
+  ],
+  "verification": [
+    {
+      "label": "按下鼠标左键或 RT",
+      "expected": "HUD 显示第 1 段并出现可见攻击动作",
+      "required": true
+    },
+    {
+      "label": "面向近距离训练目标完成四段命中",
+      "expected": "目标生命从 180 降到 86，伤害为 18/20/24/32",
+      "required": true
+    }
   ]
 }
 ```
 
-键位必须从 InputAction、InputMappingContext 或运行时代码绑定中确认。任务提示会指定 `controls.json` 的绝对路径。若任务没有新增或修改操作，也要写入空 `controls` 数组。
+键位必须从 InputAction、InputMappingContext 或运行时代码绑定中确认。任务提示会指定 `acceptance.json` 的绝对路径。`verification` 必须描述用户按什么、看到什么、数值如何变化，不能只写“功能正常”。若任务没有新增或修改操作，也要写入空 `controls` 数组。
 
 ## 验证
 
-至少测试一次普通命中、格挡命中、成功翻滚穿过攻击、失败翻滚、体力耗尽、削韧破防和敌人死亡。记录时序和日志证据。在项目目标帧率下测试战斗，并检查镜头与动画过渡。
+至少测试一次普通命中、格挡命中、成功翻滚穿过攻击、失败翻滚、体力耗尽、削韧破防和敌人死亡。记录时序和日志证据。在项目目标帧率下测试战斗，并检查镜头与动画过渡。涉及玩家输入时，自动化必须经过 Enhanced Input 或 PlayerController 输入链，不能直接调用最终攻击函数来冒充输入验证。
 
