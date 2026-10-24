@@ -1,10 +1,10 @@
 {
-  "kitVersion": "0.18.4",
+  "kitVersion": "0.18.5",
   "schemaVersion": 2,
   "channel": "stable",
   "repository": "2020bruce/SoulslikeForge",
-  "commit": "59fbcda993ce108e24cffbd9c8fc0ce9a59ec683",
-  "installedAt": "2026-10-24T15:50:17.532Z",
+  "commit": "67aa9a7534482b49d6734c626370a5bf3be17a87",
+  "installedAt": "2026-10-24T16:05:18.885Z",
   "installedFiles": {
     ".codex/agents/animation-ai-engineer.toml": "9cf2c0d408d221643d72289e90eb09f751c02bb06bd52bbb59a4bb98f6c2ba1b",
     ".codex/agents/blender-asset-artist.toml": "7f5e4411b6e8973b1895a439ccbb191e37119d59775b3c775619303859f08c93",
@@ -26,7 +26,7 @@
     ".codex/skills/asset-production/SKILL.md": "fdf0309ffe46c90d58a166e22f30f21a7cb1287e435995aa84d1542bef770858",
     ".codex/agents/asset-optimizer.toml": "65280ba361734962f0fa61169ba04f95d8549357fda66a1027c903020269ac63",
     ".codex/agents/asset-quality-reviewer.toml": "deb4aa1288cc5f0ef676d62d75ba46372c7d5b654ed98ab323f796e98366a9b8",
-    ".codex/skills/asset-quality-gate/SKILL.md": "12c0d98a0f2f7b108b1e927c7f336d193c07bdc52da2dbd9e2d6b37cae0fea4c",
+    ".codex/skills/asset-quality-gate/SKILL.md": "7764b0bf9343634b1fe8125cbdf09e72f957ba574b4ea6c62a904e8ca41edefa",
     ".codex/skills/asset-binding/SKILL.md": "d78d62e4b574fb8d1cd691a67d3680bbb5a5295eba55e01b2f680384ade047e0",
     ".codex/skills/animation-continuity/SKILL.md": "40f96a7f0f99282c64ca732d86cb6bf1453606a75150f1c22c4c8926ab7524f8",
     ".soulforge/animation.json": "a8563b02dcb61e69fcddd1a61635087bf750f3f8500c7e9646cb12cd70a47605"
