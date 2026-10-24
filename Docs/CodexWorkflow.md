@@ -71,6 +71,7 @@ soulforge docs check --staged
 - 只读调查可以并行。
 - C++ 文件必须按 Agent 所有权拆分。
 - 并行 C++ 工作使用 `soulforge worktree create` 创建独立工作树。
+- 工作树创建在游戏仓 `.soulforge/worktrees/`，不写入 SoulslikeForge 套件目录。
 - 地图、Blueprint、动画资产和 Blender 源文件串行修改。
 - 共享接口、`.Build.cs` 和 `.uproject` 由主协调 Agent 负责。
 - 文档生成索引由 DocSync 维护，人工设计文档由 `@docs-maintainer` 复核。

@@ -51,7 +51,7 @@
     ]
   },
   "worktree": {
-    "root": "",
+    "root": ".soulforge/worktrees",
     "maxAgents": 3
   },
   "update": {

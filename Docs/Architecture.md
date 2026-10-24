@@ -62,6 +62,8 @@
 - 共享接口和 `.Build.cs` 由主协调 Agent 修改。
 - 地图、Blueprint、动画和 Blender 源文件串行修改。
 - Agent 并行修改 C++ 时使用独立 Git worktree 和互不重叠的写入范围。
+- Agent 代码工作树默认位于游戏仓 `.soulforge/worktrees/`，并由 `.gitignore` 排除。
+- Studio 验收试玩使用所选任务的 worktree；主线预览使用主项目的 `soulforge playtest`。
 - 没有明确需求前，不引入 Game Feature、Mass Entity、PCG 或 World Partition。
 
 ## 已知风险
