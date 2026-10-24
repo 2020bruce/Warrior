@@ -14,6 +14,7 @@
 - `$soulslike-ue-production`
 - `$soulslike-combat`
 - `$blender-asset-pipeline`
+- `$asset-production`
 - `$soulslike-verification`
 - `$soulslike-docs-sync`
 
@@ -22,8 +23,18 @@
 - `@combat-engineer`：战斗运行时和战斗数据
 - `@animation-ai-engineer`：动画、StateTree 和敌人 AI
 - `@blender-asset-artist`：Blender 源资产与导入
+- `@asset-production-engineer`：从 Studio 需求制作 Blender 资产并交付 FBX、预览和导入清单
 - `@docs-maintainer`：文档漂移和生成索引
 - `@verifier`：独立验证证据
+
+## Studio 资产制作
+
+1. 在 Studio 资产页填写资产名称、分类、尺寸、描述和视觉风格。
+2. Studio 创建 `@asset-production-engineer` 作业并生成 prompt。
+3. Agent 使用 Blender MCP，离线时使用 Blender headless Python。
+4. Agent 交付 `.blend`、FBX、预览图和 `result.json`。
+5. Studio 自动登记 FBX，并在允许时执行 Unreal 导入。
+6. 制作与导入日志只保存在 `Saved`，源资产和 UE 资产进入 Git LFS。
 
 ## MCP
 

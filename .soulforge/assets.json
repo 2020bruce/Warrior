@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-24T09:15:52.256Z",
+  "updatedAt": "2026-10-24T10:05:34.094Z",
   "designs": {
     "Content/Maps/Lvl_WarriorDevMap.umap": {
       "title": "开发主地图",
@@ -13,7 +13,72 @@
       ],
       "notes": "Warrior 当前 standalone 试玩与关卡验证使用的主地图。",
       "updatedAt": "2026-10-24T09:15:41.790Z"
+    },
+    "Content/Assets/Blender/props/SM_TrialWaystone.uasset": {
+      "title": "试炼路标石",
+      "systemId": "world",
+      "role": "navigation-marker",
+      "status": "planned",
+      "tags": [
+        "props",
+        "waystone",
+        "blender"
+      ],
+      "notes": "由 Blender 资产制作 Agent 生成的灰盒路线标记。",
+      "updatedAt": "2026-10-24T10:05:34.094Z"
     }
   },
-  "imports": []
+  "imports": [
+    {
+      "id": "import-20261024100402-a099b574",
+      "originalName": "SM_TrialWaystone.fbx",
+      "sourcePath": "SourceArt/Imports/Generated/20261024/import-20261024100402-a099b574-SM_TrialWaystone.fbx",
+      "destinationPath": "/Game/Assets/Blender/props",
+      "assetName": "SM_TrialWaystone",
+      "kind": "mesh",
+      "status": "completed",
+      "size": 55500,
+      "createdAt": "2026-10-24T10:04:02.597Z",
+      "updatedAt": "2026-10-24T10:05:21.865Z",
+      "jobId": "asset-job-20261024100402-f6144fb7",
+      "logPath": "Saved/SoulForgeStudio/asset-imports/asset-job-20261024100402-f6144fb7/import.log",
+      "error": null,
+      "importedPaths": [
+        "/Game/Assets/Blender/props/M_SM_TrialWaystone.M_SM_TrialWaystone",
+        "/Game/Assets/Blender/props/SM_TrialWaystone.SM_TrialWaystone"
+      ]
+    }
+  ],
+  "productions": [
+    {
+      "id": "asset-produce-20261024095437-aa12e304",
+      "assetName": "SM_TrialWaystone",
+      "category": "props",
+      "description": "低矮破损的试炼路标石，顶部有微弱暖色刻痕，适合魂类灰盒场景作为路线标记。低多边形，无骨骼，单材质。",
+      "style": "黑暗奇幻，风化灰色石材，克制的暖色发光刻痕",
+      "dimensions": "高 0.8m，宽 0.45m，深 0.35m，真实比例",
+      "targetPath": "/Game/Assets/Blender/props",
+      "autoImport": true,
+      "agent": "asset-production-engineer",
+      "status": "completed",
+      "promptPath": "Saved/SoulForgeStudio/asset-productions/asset-produce-20261024095437-aa12e304/prompt.md",
+      "logPath": "Saved/SoulForgeStudio/asset-productions/asset-produce-20261024095437-aa12e304/agent.log",
+      "lastMessagePath": "Saved/SoulForgeStudio/asset-productions/asset-produce-20261024095437-aa12e304/last-message.md",
+      "resultPath": "Saved/SoulForgeStudio/asset-productions/asset-produce-20261024095437-aa12e304/result.json",
+      "pid": null,
+      "createdAt": "2026-10-24T09:54:37.348Z",
+      "startedAt": "2026-10-24T09:54:37.348Z",
+      "finishedAt": "2026-10-24T10:04:02.594Z",
+      "error": null,
+      "blendFiles": [
+        "SourceArt/Blender/props/SM_TrialWaystone.blend"
+      ],
+      "previewFiles": [
+        "SourceArt/Exports/props/SM_TrialWaystone_preview.png"
+      ],
+      "importIds": [
+        "import-20261024100402-a099b574"
+      ]
+    }
+  ]
 }

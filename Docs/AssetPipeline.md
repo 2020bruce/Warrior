@@ -25,6 +25,10 @@
 - 导入通过 UE5.8 `PythonScript` commandlet 执行 `AssetImportTask`。
 - 导入脚本、日志和结果保存在 `Saved/SoulForgeStudio/asset-imports`。
 - 导入失败时保留源文件，并可在 Studio 中查看日志或重试。
+- “Blender 制作”页签会启动 `@asset-production-engineer`，使用 Blender 4.5.15 生成源资产。
+- Agent 结果清单保存在 `Saved/SoulForgeStudio/asset-productions`。
+- FBX 会自动登记到导入队列；开启自动导入后由 UE commandlet 写入 `Content`。
+- 自动导入成功的静态网格会写入 `.soulforge/assets.json`，默认标记为 Blender 生成。
 
 ## 命名
 
