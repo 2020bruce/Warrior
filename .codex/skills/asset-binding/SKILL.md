@@ -18,7 +18,7 @@ Studio 绑定任务必须提供：
 - 已导入的 `/Game/...` 资产路径。
 - `asset-binding-result.json` 输出路径。
 
-Studio 会把导入后的 `.uasset` 复制到任务工作树 `Content/`。绑定前先确认文件真实存在。
+Studio 会把导入后的 `.uasset` 复制到任务工作树 `Content/`。绑定前先确认文件真实存在。Agent 的完成结果不会直接被视为已绑定，Studio 会独立检查资产文件、绑定源码、引用字符串、编译和任务证据。
 
 ## 绑定原则
 

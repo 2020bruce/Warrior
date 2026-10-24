@@ -53,18 +53,35 @@ metadata:
     {
       "label": "按下鼠标左键或 RT",
       "expected": "HUD 显示第 1 段并出现可见攻击动作",
-      "required": true
+      "required": true,
+      "evidenceIds": ["light-attack-input-smoke"]
     },
     {
       "label": "面向近距离训练目标完成四段命中",
       "expected": "目标生命从 180 降到 86，伤害为 18/20/24/32",
+      "required": true,
+      "evidenceIds": ["light-attack-input-smoke"]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "editor-build",
+      "kind": "build",
       "required": true
+    },
+    {
+      "id": "light-attack-input-smoke",
+      "kind": "playtest-probe",
+      "required": true,
+      "extraArgs": ["-WarriorLightAttackSmokeTest"],
+      "expectedPattern": "LIGHT_ATTACK_PIE_SMOKE_TEST PASS",
+      "timeoutSeconds": 180
     }
   ]
 }
 ```
 
-键位必须从 InputAction、InputMappingContext 或运行时代码绑定中确认。任务提示会指定 `acceptance.json` 的绝对路径。`verification` 必须描述用户按什么、看到什么、数值如何变化，不能只写“功能正常”。若任务没有新增或修改操作，也要写入空 `controls` 数组。
+键位必须从 InputAction、InputMappingContext 或运行时代码绑定中确认。任务提示会指定 `acceptance.json` 的绝对路径。`verification` 必须描述用户按什么、看到什么、数值如何变化，不能只写“功能正常”。能够自动确认的验收项必须填写 `evidenceIds`，并声明 `build`、`automation`、`playtest-probe` 或 `log` 证据。若任务没有新增或修改操作，也要写入空 `controls` 数组。
 
 ## 验证
 
