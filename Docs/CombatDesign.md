@@ -41,3 +41,6 @@
 - 普通命中、格挡、成功翻滚、失败翻滚、体力耗尽、削韧破防和敌人死亡均可复现。
 - 60 FPS 下输入、镜头和动画过渡保持稳定。
 - 每次调整帧数据后记录 PIE 测试和日志证据。
+- 攻击动画和连段必须运行 `soulforge animation check --json`，通过
+  `.soulforge/animation.json` 中的旋转、位移和首尾姿态阈值。
+- `animation-continuity` 证据失败时不得通过验收。

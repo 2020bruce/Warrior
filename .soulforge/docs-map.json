@@ -71,6 +71,15 @@
       ]
     },
     {
+      "id": "animation-continuity",
+      "watch": [
+        ".soulforge/animation.json"
+      ],
+      "review": [
+        "Docs/CombatDesign.md"
+      ]
+    },
+    {
       "id": "design-data",
       "watch": [
         ".soulforge/design.json"

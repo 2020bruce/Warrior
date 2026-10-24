@@ -87,3 +87,12 @@ metadata:
 
 至少测试一次普通命中、格挡命中、成功翻滚穿过攻击、失败翻滚、体力耗尽、削韧破防和敌人死亡。记录时序和日志证据。在项目目标帧率下测试战斗，并检查镜头与动画过渡。涉及玩家输入时，自动化必须经过 Enhanced Input 或 PlayerController 输入链，不能直接调用最终攻击函数来冒充输入验证。
 
+攻击动画或连段修改后必须运行：
+
+```powershell
+soulforge animation check --json
+```
+
+该命令在 Unreal 中实际采样骨骼连续性。`animation-continuity` 证据失败时禁止验收，
+不能仅凭动画文件存在或 Agent 自述通过。
+

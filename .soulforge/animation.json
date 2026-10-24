@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "enabled": true,
+  "sequences": [
+    "/Game/Assets/HeroCharacter/Animations/Axe/Hero_Axe_LightAttack_1.Hero_Axe_LightAttack_1",
+    "/Game/Assets/HeroCharacter/Animations/Axe/Hero_Axe_LightAttack_2.Hero_Axe_LightAttack_2",
+    "/Game/Assets/HeroCharacter/Animations/Axe/Hero_Axe_LightAttack_3.Hero_Axe_LightAttack_3",
+    "/Game/Assets/HeroCharacter/Animations/Axe/Hero_Axe_LightAttack_4.Hero_Axe_LightAttack_4"
+  ],
+  "chain": true,
+  "transitions": [],
+  "ignoredBonePrefixes": [
+    "VB "
+  ],
+  "applyTo": {
+    "systems": [
+      "combat",
+      "animation"
+    ],
+    "agents": [
+      "combat",
+      "animation"
+    ],
+    "keywords": [
+      "攻击",
+      "连段",
+      "attack",
+      "montage"
+    ]
+  },
+  "thresholds": {
+    "maxAngularStepDeg": 60,
+    "maxTranslationStepCm": 20,
+    "maxTransitionAngularDeg": 50,
+    "maxTransitionLocationCm": 15
+  }
+}

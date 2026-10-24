@@ -1,10 +1,10 @@
 {
-  "kitVersion": "0.17.6",
+  "kitVersion": "0.18.0",
   "schemaVersion": 2,
   "channel": "stable",
   "repository": "2020bruce/SoulslikeForge",
-  "commit": "79ffda5fa9bf15237d38c489c528757cb71f37fd",
-  "installedAt": "2026-10-24T14:11:22.960Z",
+  "commit": "3c6464cea2c61206a9d2f4638baeeba765c55f84",
+  "installedAt": "2026-10-24T15:00:11.333Z",
   "installedFiles": {
     ".codex/agents/animation-ai-engineer.toml": "9cf2c0d408d221643d72289e90eb09f751c02bb06bd52bbb59a4bb98f6c2ba1b",
     ".codex/agents/blender-asset-artist.toml": "7f5e4411b6e8973b1895a439ccbb191e37119d59775b3c775619303859f08c93",
@@ -14,7 +14,7 @@
     ".codex/skills/soulslike-verification/SKILL.md": "6c3b9b2209c7390f322a40c813435c3fa4f8be40bd7ff8da0f92555c235598c8",
     ".codex/skills/soulslike-ue-production/SKILL.md": "26427b07687a6101717b10aeee00e4834be8536e9f20ca7b464452c891787e1c",
     ".codex/skills/soulslike-docs-sync/SKILL.md": "ee360346712fcbbc275a0bb4244247c5727db4eb6061db1dc2ce4a8933f3a85b",
-    ".codex/skills/soulslike-combat/SKILL.md": "9261d9eca61d1f0386dae00204aaab7ee05b940fab07fa3d65720e2cfe10c0c2",
+    ".codex/skills/soulslike-combat/SKILL.md": "640a4d15b2fe7868b1b0d038bc7b7f2c5c5d0791766b5e9db478ab2f8c16bc88",
     ".codex/skills/blender-asset-pipeline/SKILL.md": "5c341c88c1f1b7ae76b5ace3b58eccd5e521b4e321c8a1f6595a70190221d8e6",
     ".soulforge/docs-map.json": "e9851f19618f72ed603b69fb9fdea46f5aea8a2d979c35f6d286c71672f6b401",
     "Docs/Architecture.md": "03ddb47a167264e317c523001e0b8935211e4774c4c2881f4a5e0cb31b065508",
@@ -27,6 +27,8 @@
     ".codex/agents/asset-optimizer.toml": "65280ba361734962f0fa61169ba04f95d8549357fda66a1027c903020269ac63",
     ".codex/agents/asset-quality-reviewer.toml": "deb4aa1288cc5f0ef676d62d75ba46372c7d5b654ed98ab323f796e98366a9b8",
     ".codex/skills/asset-quality-gate/SKILL.md": "37ad45c4c9ec804cc2dad941f2c2c3e99f6fc6bd23b2c1eec009d5d19d86760d",
-    ".codex/skills/asset-binding/SKILL.md": "d78d62e4b574fb8d1cd691a67d3680bbb5a5295eba55e01b2f680384ade047e0"
+    ".codex/skills/asset-binding/SKILL.md": "d78d62e4b574fb8d1cd691a67d3680bbb5a5295eba55e01b2f680384ade047e0",
+    ".codex/skills/animation-continuity/SKILL.md": "40f96a7f0f99282c64ca732d86cb6bf1453606a75150f1c22c4c8926ab7524f8",
+    ".soulforge/animation.json": "a8563b02dcb61e69fcddd1a61635087bf750f3f8500c7e9646cb12cd70a47605"
   }
 }
