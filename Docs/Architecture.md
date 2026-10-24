@@ -5,6 +5,7 @@
 - 运行时模块：`Warrior`
 - 主要代码目录：`Source/Warrior/Public`、`Source/Warrior/Private`
 - 游戏设计数据：`.soulforge/design.json`，包含阶段、阶段小任务、功能、系统和核心循环
+- 资产设计目录：`.soulforge/assets.json`，记录现有资产用途、系统归属、标签和导入结果
 - 制作套件：外部 `SoulslikeForge` 仓库
 - 项目集成：`.soulforge`、`.codex/agents`、`.codex/skills`
 - 本机路径：`.soulforge/config.json`，不进入 Git
@@ -28,6 +29,14 @@
 - `AWarriorBaseGameMode` 指定默认角色、PlayerController 和操作提示 HUD。
 - Standalone 试玩使用 `UnrealEditor.exe -game`，不要求先生成安装包。
 - 键鼠与手柄操作表通过 `.soulforge/config.json` 的 `playtest.controls` 配置，并显示在 Studio 验收区。
+
+## 资产工作区
+
+- Studio 通过文件系统扫描 `Content` 下的 `.uasset` 和 `.umap`，不要求 Unreal Editor 运行。
+- 资产元数据独立保存在 `.soulforge/assets.json`，不修改 Unreal 资产本身。
+- 新源文件先进入 `SourceArt/Imports/Incoming`，再由 UE5.8 Python commandlet 导入。
+- 导入使用 `AssetImportTask`，并将脚本、日志和结果写入项目 `Saved` 目录。
+- 删除暂存记录只会删除对应源文件，不删除已导入的 Unreal 资产。
 
 ## 已启用插件
 

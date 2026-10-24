@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-24T09:15:52.256Z",
+  "designs": {
+    "Content/Maps/Lvl_WarriorDevMap.umap": {
+      "title": "开发主地图",
+      "systemId": "world",
+      "role": "dev-playground",
+      "status": "approved",
+      "tags": [
+        "playtest",
+        "graybox"
+      ],
+      "notes": "Warrior 当前 standalone 试玩与关卡验证使用的主地图。",
+      "updatedAt": "2026-10-24T09:15:41.790Z"
+    }
+  },
+  "imports": []
+}
